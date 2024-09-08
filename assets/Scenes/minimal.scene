@@ -1,5 +1,5 @@
 {
-  "__guid": "7514637b-c586-47a7-8613-3eb6481f32a3",
+  "__guid": "0f17c3f5-f64a-434e-aa46-7a4537b6131a",
   "GameObjects": [
     {
       "__guid": "0fded47c-df6e-4010-a37d-e7637090c986",
@@ -22,8 +22,8 @@
           "MyStringValue": "Hello World!",
           "Score": {
             "_type": "component",
-            "component_id": "8e56cc4a-7489-498a-ab56-17ce229ddd67",
-            "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
+            "component_id": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
+            "go": "b4d56c78-21d3-46a1-9558-79faeb790096",
             "component_type": "ScoreComp"
           }
         }
@@ -36,31 +36,6 @@
       "Position": "-172,0.00003166468,32",
       "Enabled": true,
       "Components": [
-        {
-          "__type": "Sandbox.SkinnedModelRenderer",
-          "__guid": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
-          "BodyGroups": 341,
-          "CreateBoneObjects": false,
-          "Model": "models/citizen/citizen.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1",
-          "UseAnimGraph": true
-        },
-        {
-          "__type": "Sandbox.Citizen.CitizenAnimationHelper",
-          "__guid": "08727faa-f346-4609-af0a-8a0d2652dc41",
-          "BodyWeight": 1,
-          "EyesWeight": 1,
-          "HeadWeight": 1,
-          "Height": 1,
-          "LookAtEnabled": false,
-          "Target": {
-            "_type": "component",
-            "component_id": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
-            "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
-            "component_type": "SkinnedModelRenderer"
-          }
-        },
         {
           "__type": "Sandbox.CharacterController",
           "__guid": "4a55d40e-872a-43b4-b820-2fe059e3b306",
@@ -79,7 +54,7 @@
           "AnimHelper": {
             "_type": "component",
             "component_id": "08727faa-f346-4609-af0a-8a0d2652dc41",
-            "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
+            "go": "d3decd51-0f3d-4037-ad84-12e3759c16cd",
             "component_type": "CitizenAnimationHelper"
           },
           "DeathColl": {
@@ -105,39 +80,11 @@
           },
           "Score": {
             "_type": "component",
-            "component_id": "8e56cc4a-7489-498a-ab56-17ce229ddd67",
-            "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
+            "component_id": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
+            "go": "b4d56c78-21d3-46a1-9558-79faeb790096",
             "component_type": "ScoreComp"
           },
           "SideMoveTime": 0.1
-        },
-        {
-          "__type": "ScoreComp",
-          "__guid": "8e56cc4a-7489-498a-ab56-17ce229ddd67",
-          "MaxSpeedDistance": 100000,
-          "SpeedDistScale": {
-            "rangey": "1,2",
-            "frames": [
-              {},
-              {
-                "x": 1,
-                "y": 1,
-                "mode": "Flat"
-              }
-            ]
-          }
-        },
-        {
-          "__type": "CitizenCustomisationComponent",
-          "__guid": "d54b0644-39ed-4e2b-9a6c-3dec882b1213",
-          "body": {
-            "_type": "component",
-            "component_id": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
-            "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "Clothes": [],
-          "UseClientClothes": true
         },
         {
           "__type": "Sandbox.ModelPhysics",
@@ -149,21 +96,10 @@
           "Renderer": {
             "_type": "component",
             "component_id": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
-            "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
+            "go": "d3decd51-0f3d-4037-ad84-12e3759c16cd",
             "component_type": "SkinnedModelRenderer"
           },
           "RigidbodyFlags": 0
-        },
-        {
-          "__type": "FootstepSoundsComponent",
-          "__guid": "ae53a672-361e-4475-9bf6-cc0f264719c2",
-          "Source": {
-            "_type": "component",
-            "component_id": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
-            "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "StaticSound": false
         },
         {
           "__type": "PowerupManager",
@@ -201,12 +137,6 @@
                 "component_id": "75eba159-669c-4014-a70d-4ef28b8f20c8",
                 "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
                 "component_type": "ModelPhysics"
-              },
-              "Score": {
-                "_type": "component",
-                "component_id": "8e56cc4a-7489-498a-ab56-17ce229ddd67",
-                "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
-                "component_type": "ScoreComp"
               }
             }
           ]
@@ -426,6 +356,52 @@
               "Size": "32,32,256",
               "TintColor": "1,1,1,1",
               "TriPlanar": false
+            }
+          ]
+        },
+        {
+          "__guid": "d3decd51-0f3d-4037-ad84-12e3759c16cd",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
+              "BodyGroups": 341,
+              "CreateBoneObjects": false,
+              "Model": "models/citizen/citizen.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.Citizen.CitizenAnimationHelper",
+              "__guid": "08727faa-f346-4609-af0a-8a0d2652dc41",
+              "BodyWeight": 1,
+              "EyesWeight": 1,
+              "HeadWeight": 1,
+              "Height": 1,
+              "LookAtEnabled": false,
+              "Target": {
+                "_type": "component",
+                "component_id": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
+                "go": "d3decd51-0f3d-4037-ad84-12e3759c16cd",
+                "component_type": "SkinnedModelRenderer"
+              }
+            },
+            {
+              "__type": "CitizenCustomisationComponent",
+              "__guid": "d54b0644-39ed-4e2b-9a6c-3dec882b1213",
+              "body": {
+                "_type": "component",
+                "component_id": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
+                "go": "d3decd51-0f3d-4037-ad84-12e3759c16cd",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "Clothes": [],
+              "UseClientClothes": true
             }
           ]
         }
@@ -657,8 +633,8 @@
           "MyStringValue": "Hello World!",
           "Score": {
             "_type": "component",
-            "component_id": "8e56cc4a-7489-498a-ab56-17ce229ddd67",
-            "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
+            "component_id": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
+            "go": "b4d56c78-21d3-46a1-9558-79faeb790096",
             "component_type": "ScoreComp"
           }
         }
@@ -850,7 +826,7 @@
       "__guid": "6f2947f1-2ac8-40d5-9bbe-90ac4b5bf69e",
       "Flags": 0,
       "Name": "Powerup",
-      "Position": "152,0.00009432572,48",
+      "Position": "776,0.00009432572,48",
       "Enabled": true,
       "Components": [
         {
@@ -900,6 +876,31 @@
               "Width": 0.5
             }
           ]
+        }
+      ]
+    },
+    {
+      "__guid": "b4d56c78-21d3-46a1-9558-79faeb790096",
+      "Flags": 0,
+      "Name": "Logic",
+      "Position": "630.6545,-146.5303,108.3759",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ScoreComp",
+          "__guid": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
+          "MaxSpeedDistance": 100000,
+          "SpeedDistScale": {
+            "rangey": "1,2",
+            "frames": [
+              {},
+              {
+                "x": 1,
+                "y": 1,
+                "mode": "Flat"
+              }
+            ]
+          }
         }
       ]
     }
