@@ -1,0 +1,176 @@
+{
+  "RootObject": {
+    "__guid": "765a5f91-48d2-4fd7-a531-0826c2d05aa9",
+    "Flags": 0,
+    "Name": "dev_segment_01",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "LevelSegment",
+        "__guid": "a5350fff-fdba-4530-9b7d-377e4dd5f5e6",
+        "IsObstacles": false,
+        "Width": 1728
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "7e5a33b1-9854-401e-86e1-c4d75f32ab8b",
+        "Flags": 0,
+        "Name": "dev_base",
+        "Position": "288,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "b5de79fa-c252-4003-b54b-cd8521310af8",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "54bd6217-8c9d-4f49-8540-a27f5d88e962",
+            "IsTrigger": false,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "11622902-7a82-427c-8ecf-40e06095c233",
+        "Flags": 0,
+        "Name": "dev_base",
+        "Position": "-288.1299,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "03e867e3-33e6-4223-83c8-0214769875e2",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "20fbe26e-b83f-4dce-b166-d8df1e94c611",
+            "IsTrigger": false,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "9cddc217-fe0a-4718-86d8-7b9c7dc3787a",
+        "Flags": 0,
+        "Name": "dev_base (1)",
+        "Position": "864,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "150ca500-b7df-40f4-924f-ddb4e2d57a81",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "f3c33229-728f-4ced-907d-858215268536",
+            "IsTrigger": false,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "14091ca5-c1bd-487a-8f61-dc33fa79a522",
+        "Flags": 0,
+        "Name": "dev_base (2)",
+        "Position": "1440,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "486675e6-7c00-40a6-81bc-9eb57533cca3",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "4468aa33-5cfa-42b5-9c3d-212ffbc27ac6",
+            "IsTrigger": false,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "fe0d6f86-9494-42e4-9e48-c230fef3e2cf",
+        "Flags": 0,
+        "Name": "boxcar01",
+        "Position": "671.8701,0,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "03f3d8f0-6d9a-4556-bbe5-72e3c9870976",
+        "Flags": 0,
+        "Name": "boxcar01 (1)",
+        "Position": "1215.87,0,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "4fcc97dc-9d83-48de-aa3a-c3daf9f808d4",
+        "Flags": 0,
+        "Name": "underobstacle",
+        "Position": "576,-128,2",
+        "Rotation": "0,0,1,0.0000001947072",
+        "Enabled": true,
+        "__Prefab": "prefabs/underobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "de97f468-6190-48df-9c77-31854457c84e",
+        "Flags": 0,
+        "Name": "boxcarramp",
+        "Position": "1024,-0.0000000000001881057,-0.000000000000000372916",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcarramp.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "afe061cb-a0bf-4d6f-ad1e-1105f9953b6f",
+        "Flags": 0,
+        "Name": "boxcarramp (1)",
+        "Position": "480,-0.00000000000008817455,-0.00006103516",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcarramp.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "1ef1d9f8-6fd0-4d35-b094-da63ca75f35e",
+        "Flags": 0,
+        "Name": "smallobstacle (1)",
+        "Position": "1280,128,0.0000000000000002672931",
+        "Enabled": true,
+        "__Prefab": "prefabs/smallobstacle.prefab",
+        "__PrefabVariables": {}
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

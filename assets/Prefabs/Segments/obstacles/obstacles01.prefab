@@ -1,0 +1,52 @@
+{
+  "RootObject": {
+    "__guid": "93b0531b-a79b-4041-ae93-c2294c9427db",
+    "Flags": 0,
+    "Name": "obstacles01",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "LevelSegment",
+        "__guid": "e1e8589c-81e8-46e5-b74d-a6fd96df967d",
+        "IsObstacles": true,
+        "Width": 1728
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "0249e4a1-8c2d-4f1e-a7e1-13f85c2ebb3f",
+        "Flags": 0,
+        "Name": "boxcar01",
+        "Position": "96,-8,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "a206a11a-ad45-4c48-8577-778c2d78003d",
+        "Flags": 0,
+        "Name": "boxcar01 (1)",
+        "Position": "288,-8,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "66c522f4-16d6-4a5e-a960-9811242d0195",
+        "Flags": 0,
+        "Name": "boxcar01 (2)",
+        "Position": "480,-8,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

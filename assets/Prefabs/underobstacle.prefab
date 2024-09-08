@@ -1,0 +1,56 @@
+{
+  "RootObject": {
+    "Id": "4d8c2a97-b4d2-46d6-bd76-5379159f7e4d",
+    "Name": "underobstacle",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "e50fc693-e9e4-4a8e-8a1e-e0291df111f2",
+        "Name": "Object",
+        "Position": "0,0,93.46672",
+        "Tags": "death",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "BoxCollider",
+            "__enabled": true,
+            "Center": "0,0,0",
+            "IsTrigger": false,
+            "Scale": "36,108.9,67.29998",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      },
+      {
+        "Id": "770d3bce-ebaf-4b34-9e5a-cbbc393d3907",
+        "Name": "Object",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/protounder.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "ModelCollider",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Model": "models/protounder.vmdl",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

@@ -1,0 +1,380 @@
+{
+  "RootObject": {
+    "Id": "cea0275a-74df-4697-b6b8-60c7b9a4e925",
+    "Name": "level01",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "6185f987-4793-49d7-a620-b666702f27c9",
+        "Name": "protoportal",
+        "Position": "5376,0,128",
+        "Enabled": true,
+        "__Prefab": "prefabs/portal.prefab"
+      },
+      {
+        "Id": "cd8a9f52-ec04-464c-8b7c-15b63b44ac73",
+        "Name": "boxcar01",
+        "Position": "1024,128,-0.0000218458",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "b6753922-98f5-42eb-8ea0-a77ce0ebc259",
+        "Name": "boxcar01 (1)",
+        "Position": "1024,-128,-0.0000218458",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "b31e597f-fa4b-4815-86e7-ffe66856c32d",
+        "Name": "boxcar01 (2)",
+        "Position": "1248,-128,-0.0000218458",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "6d063853-4dfb-4448-8bde-325da52284ba",
+        "Name": "boxcar01 (3)",
+        "Position": "1248,128,-0.00002096544",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "739e26cf-a34f-4c6b-87bc-d43fc47754b9",
+        "Name": "boxcar01 (4)",
+        "Position": "1472,128,-0.000008440058",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "2114b752-a074-4796-b2fb-ecb8b0cbab52",
+        "Name": "boxcar01 (5)",
+        "Position": "1696,0,0.00004458519",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "789c5d8d-52e4-4da6-bc91-bd4aead0d4a1",
+        "Name": "boxcar01 (6)",
+        "Position": "1952,128,0.0001187775",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "86960a63-d527-497f-8166-57920c0fc2ac",
+        "Name": "boxcar01",
+        "Position": "2304,0,-0.00004689158",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "41b17570-6cd6-4e68-9924-00a79dd42392",
+        "Name": "boxcarramp",
+        "Position": "2112,0,0.00001372751",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcarramp.prefab"
+      },
+      {
+        "Id": "46f2a24a-9fa2-4fbb-bbdb-c019ca38456c",
+        "Name": "boxcar01",
+        "Position": "2496,0,0.00001046783",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "0994f9d0-6651-48b7-9f88-03a0ea61b2f2",
+        "Name": "boxcar01 (7)",
+        "Position": "2688,0,0.00001046783",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "056b79d2-064c-4dd1-b742-c1175e615f50",
+        "Name": "boxcar01",
+        "Position": "3072,0,0.00002350099",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "139a3795-c5a8-4ab8-8ce8-339ce057e972",
+        "Name": "boxcar01",
+        "Position": "2848,128,-0.00003740774",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "1f5c9f39-d470-4f4e-9fb4-3a69c587d0f6",
+        "Name": "boxcarramp",
+        "Position": "2560,-128,0.00001980446",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcarramp.prefab"
+      },
+      {
+        "Id": "a32a2e00-1d9e-4280-b7e8-c0d96f208dc7",
+        "Name": "boxcar01",
+        "Position": "2752,-128,-0.0000203466",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "c6af4480-5cf6-4a79-b337-e56f1a134636",
+        "Name": "smallobstacle",
+        "Position": "3200,-128,0.00003982848",
+        "Enabled": true,
+        "__Prefab": "prefabs/smallobstacle.prefab"
+      },
+      {
+        "Id": "b3492977-14a5-4d17-aac7-22f1cef3473a",
+        "Name": "smallobstacle",
+        "Position": "2208,-130.2453,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/smallobstacle.prefab"
+      },
+      {
+        "Id": "3640213c-fcad-48a1-bed2-c261fced99b0",
+        "Name": "underobstacle",
+        "Position": "1696,-128,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/underobstacle.prefab"
+      },
+      {
+        "Id": "a623079b-4f83-4db4-acee-764538233d97",
+        "Name": "boxcar01",
+        "Position": "3296,0,0.00008223618",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "d188a7c5-ec75-4a87-a09a-a5d27e060760",
+        "Name": "underobstacle",
+        "Position": "3392,128,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/underobstacle.prefab"
+      },
+      {
+        "Id": "13de980b-bf8d-4103-8113-85489a64403c",
+        "Name": "boxcar01",
+        "Position": "3680,-128,-0.00006781914",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "592310c2-a180-4b2a-86b9-99496b087c40",
+        "Name": "boxcar01 (8)",
+        "Position": "3904,-128,-0.00006781914",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "3bdf09c8-7b19-4224-a34d-951ec089eb8e",
+        "Name": "boxcar01 (11)",
+        "Position": "4096,-128,-0.00006781914",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "3505a34a-7de1-4135-8e13-3869a1db40c2",
+        "Name": "boxcar01 (9)",
+        "Position": "3904,0,-0.00006781914",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "488d4bd3-9a40-4c21-a6a4-d6e179261592",
+        "Name": "boxcar01 (10)",
+        "Position": "4096,0,-0.00006781914",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "7f78eb6b-2ecc-4234-b87e-ae82419b752c",
+        "Name": "boxcar01 (12)",
+        "Position": "4096,128,-0.00006781914",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "4c5e0064-9418-4299-af5f-e367eaab5ced",
+        "Name": "boxcarramp",
+        "Position": "3904,128,0.0000002239831",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcarramp.prefab"
+      },
+      {
+        "Id": "a0806d32-3509-4780-a1f0-261007abb446",
+        "Name": "smallobstacle",
+        "Position": "4800,128,-0.00004125107",
+        "Enabled": true,
+        "__Prefab": "prefabs/smallobstacle.prefab"
+      },
+      {
+        "Id": "88521dc1-53c7-476f-8275-604e31068a95",
+        "Name": "smallobstacle",
+        "Position": "4800,-128,-0.00003522611",
+        "Enabled": true,
+        "__Prefab": "prefabs/smallobstacle.prefab"
+      },
+      {
+        "Id": "6806baf9-a5ea-444c-82d2-09d4a214e66f",
+        "Name": "underobstacle",
+        "Position": "4736,0,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/underobstacle.prefab"
+      },
+      {
+        "Id": "c55bec11-a485-4de8-ad70-ae80a1c78778",
+        "Name": "Background01",
+        "Enabled": true,
+        "__Prefab": "prefabs/background01.prefab"
+      },
+      {
+        "Id": "8716ade3-57cf-4082-a477-e3a44db9ccb6",
+        "Name": "coin",
+        "Position": "960,0,32",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "efd0ee2b-bd59-4596-a1e5-ab51a4d2a043",
+        "Name": "coin (5)",
+        "Position": "1184,0,32",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "cd9bbb02-e137-47ae-bd35-9f7107df90ad",
+        "Name": "coin (6)",
+        "Position": "2240,0.0000385509,137.6058",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "2c327ecd-079c-4caf-9c6a-db08bf91fe97",
+        "Name": "coin (12)",
+        "Position": "3008,0.0000385509,192",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "b6dd0b20-f774-4600-ba2c-c1bde3cac910",
+        "Name": "coin (15)",
+        "Position": "2944,0,224",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "30b231d7-7d5f-48f1-a33b-2c31637b5e31",
+        "Name": "coin (16)",
+        "Position": "2816,0.00006176014,160",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "e233610c-19cb-4f0b-a24b-b91e4cd46ce3",
+        "Name": "coin (17)",
+        "Position": "2880,0.00006461642,192",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "1c2fe639-7497-4320-9b8e-6f3eaa90d628",
+        "Name": "coin (1)",
+        "Position": "1024,0,32",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "44eb883e-53aa-49cb-83c5-91a0d3400e6b",
+        "Name": "coin (4)",
+        "Position": "1248,0,32",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "91d38f7e-8756-4177-912e-c5bd9a307143",
+        "Name": "coin (7)",
+        "Position": "2304,0.0000385509,137.6058",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "e91b1b2d-19cd-4bb5-b23c-62ec0e7ebe86",
+        "Name": "coin (13)",
+        "Position": "3072,0.0000385509,160",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "a4047ec8-fc8f-4cab-9c70-1d78459c1b8e",
+        "Name": "coin (2)",
+        "Position": "1088,0,32",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "33ed2645-b8e2-40d8-b8ae-037bb81fb81b",
+        "Name": "coin (3)",
+        "Position": "1312,0,32",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "c2891a57-4d59-4272-9ece-a1f9fe3fcbac",
+        "Name": "coin (8)",
+        "Position": "2368,0.0000385509,137.6058",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "6eae6e51-e54d-4cf7-995c-2513318f0d45",
+        "Name": "coin (14)",
+        "Position": "3136,0.0000385509,137.6058",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "09f7ba45-7b59-41a7-8f39-77c5766881b1",
+        "Name": "coin",
+        "Position": "4032,0,160",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "c5fe873b-69bb-479c-ab51-fc7ea175ac26",
+        "Name": "coin (9)",
+        "Position": "4096,0,160",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "ca7785d5-f588-45b0-85ba-b4e165396c21",
+        "Name": "coin (10)",
+        "Position": "4160,0,160",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

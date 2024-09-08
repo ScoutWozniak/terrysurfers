@@ -1,0 +1,44 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "models",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "models",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "facepunch.metal_painted_black_a_hs#29194",
+        "droppod.ringworld#41550",
+        "facepunch.metal_painted_a_hs#29195",
+        "titanovsky.ufrts_resource_gold1#41229",
+        "facepunch.metal_bare_a_hs#28944",
+        "facepunch.concrete_cast_hs_01#28794",
+        "facepunch.metal_painted_yellow_a_hs#28964",
+        "cgbookcase.sandygravel01#31610",
+        "facepunch.metal_painted_cyan_a_hs#28951",
+        "facepunch.floor_gravel_sand_a#18656",
+        "baik.painted_wood_hs#10744",
+        "facepunch.metal_painted_red_b_hs#28961",
+        "facepunch.metal_brushed_a_hs#28945",
+        "droppod.ringworld#60674",
+        "stardrive.rope_barrier_a#26473",
+        "facepunch.floor_asphalt_b#60786",
+        "facepunch.wall_brick_e#62032",
+        "facepunch.metal_painted_black_b_hs#28948",
+        "eurorp.door01_right_01#12553",
+        "facepunch.wall_brick_d_painted#45185",
+        "facepunch.floor_gravel_asphalt#18653",
+        "quack.devgen01b#11249",
+        "quack.devgen01#11247"
+      ],
+      "IsWhitelistDisabled": false,
+      "Metadata": {
+        "SingleAssetSource": "maps/models.vmap"
+      }
+    }
+  }
+}

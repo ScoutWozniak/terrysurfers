@@ -1,0 +1,92 @@
+{
+  "RootObject": {
+    "Id": "c5728b2b-019c-40cb-a139-095b3b13fc90",
+    "Name": "Config5",
+    "Position": "1056,-3296,0.00005816727",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "0d28abe2-f999-4ea7-bd27-e406d84979a4",
+        "Name": "TrainCarriage (9)",
+        "Position": "-32,128,-0.000002790362",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "6efda128-3366-486f-b648-d1bf45528057",
+        "Name": "TrainCarriage (7)",
+        "Position": "-32,0,-0.00001401288",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "a96f9d36-484f-4399-99b9-6da86960d188",
+        "Name": "prototunnel (6)",
+        "Position": "0,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/prototunnel.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "ModelCollider",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Model": "models/prototunnel.vmdl",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      },
+      {
+        "Id": "ab1e5f53-3dd4-43e1-96ca-f8ec7c2e12cb",
+        "Name": "coin",
+        "Position": "-103.0932,128,159.9999",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "199649e0-5bc3-4185-b7ba-e9a743a8ad87",
+        "Name": "coin",
+        "Position": "-32,128,159.9999",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "37078e43-4673-4d7d-8c1e-f2b04e894507",
+        "Name": "coin",
+        "Position": "32,128,159.9999",
+        "Tags": "coin",
+        "Enabled": true,
+        "__Prefab": "prefabs/coin.prefab"
+      },
+      {
+        "Id": "66defcb7-3228-4217-b175-689abc872677",
+        "Name": "boxcarramp",
+        "Position": "-224,128,-0.00003427756",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcarramp.prefab"
+      },
+      {
+        "Id": "0b82674a-3999-4f48-bd31-6bad0d321e29",
+        "Name": "protounder",
+        "Position": "-96,-128,24.00001",
+        "Enabled": true,
+        "__Prefab": "prefabs/underobstacle.prefab"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

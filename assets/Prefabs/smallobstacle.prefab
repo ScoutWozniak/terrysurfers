@@ -1,0 +1,51 @@
+{
+  "RootObject": {
+    "Id": "b334f901-8d53-4595-889a-fed590ac774f",
+    "Name": "smallobstacle",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ModelRenderer",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/protosmall.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "ModelCollider",
+        "__enabled": true,
+        "IsTrigger": false,
+        "Model": "models/protosmall.vmdl",
+        "Static": false,
+        "Surface": null
+      }
+    ],
+    "Children": [
+      {
+        "Id": "a5e451c3-ef9f-4fa7-a596-815d0a5acb13",
+        "Name": "Object",
+        "Position": "0,0,28",
+        "Tags": "death",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "BoxCollider",
+            "__enabled": true,
+            "Center": "0,0,0",
+            "IsTrigger": false,
+            "Scale": "37.50002,109.3998,58.79996",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

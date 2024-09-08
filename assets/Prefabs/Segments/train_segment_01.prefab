@@ -1,0 +1,302 @@
+{
+  "RootObject": {
+    "__guid": "8fdd5d6c-480a-4f47-955a-45c1e846bf8f",
+    "Flags": 0,
+    "Name": "train_segment_01",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "LevelSegment",
+        "__guid": "12858f39-a395-4822-ad2f-fcd040b5a88a",
+        "IsObstacles": false,
+        "Width": 1728
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "a61ed21c-6cab-4efb-b226-1d0bc36de205",
+        "Flags": 0,
+        "Name": "dev_base (1)",
+        "Position": "292,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "094cf500-cb04-46dd-b700-4a265b4ad679",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "54b0b772-2535-41da-9850-2277996295e8",
+            "IsTrigger": false,
+            "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "d686968a-5ee7-4735-9650-6acba5de4619",
+        "Flags": 0,
+        "Name": "dev_base (3)",
+        "Position": "-284,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "18620729-e14a-45a2-bc66-1a968f2fe22e",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "b8167f4a-2b7e-4d82-856a-6fedda706a5e",
+            "IsTrigger": false,
+            "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "ec1e916c-9dc1-467d-be7b-bfe7394003ab",
+        "Flags": 0,
+        "Name": "dev_base",
+        "Position": "868,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "ff3741a6-5b02-4d1d-897e-874632f27249",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "b1e995be-83aa-45ba-aa38-706938bea86a",
+            "IsTrigger": false,
+            "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "159d48cd-73a5-44dc-9dac-8dced0531b0a",
+        "Flags": 0,
+        "Name": "dev_base (2)",
+        "Position": "1440,0,0",
+        "Rotation": "0,0,1,0.0000001947072",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "ae62c5b3-ed25-4066-91e8-b75b2dd61e30",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/train/trainstation_side.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "73d1ed33-65ba-4acf-9db8-fd5d5b1672b8",
+            "IsTrigger": false,
+            "Model": "models/infinite/train/trainstation_side.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "f506bcbf-32a6-4388-89d3-c4daddced226",
+        "Flags": 0,
+        "Name": "SunBlocker",
+        "Position": "-650.9636,0,0",
+        "Scale": "4,21.929,15.7683",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "c2783425-9e24-41b7-b8f8-558ad730eab3",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "0c345cdc-f669-4f6b-abd5-dcef41c4250c",
+        "Flags": 0,
+        "Name": "Lighting",
+        "Enabled": true,
+        "Children": [
+          {
+            "__guid": "d1424a3f-a8d5-4428-a227-ea592cb4d568",
+            "Flags": 0,
+            "Name": "Point Light",
+            "Position": "-136,-0.000000349128,216.252",
+            "Tags": "light_point,light",
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "c68a6ea8-8dcc-435f-8b25-36b95d719d62",
+                "Attenuation": 1,
+                "FogMode": "Enabled",
+                "FogStrength": 0.25,
+                "LightColor": "1,0.59318,0.23721,1",
+                "Radius": 400,
+                "Shadows": true
+              }
+            ]
+          },
+          {
+            "__guid": "1a70460b-ba35-479a-ad38-9f3053dc494c",
+            "Flags": 0,
+            "Name": "Point Light",
+            "Position": "184,-0.000000349128,216.252",
+            "Tags": "light_point,light",
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "4de267a4-70bf-4c36-bfac-b4bbbd15b9a3",
+                "Attenuation": 1,
+                "FogMode": "Enabled",
+                "FogStrength": 0.25,
+                "LightColor": "1,0.59318,0.23721,1",
+                "Radius": 400,
+                "Shadows": true
+              }
+            ]
+          },
+          {
+            "__guid": "39a3f689-d3bc-48ce-9e86-d64bf8cf4b85",
+            "Flags": 0,
+            "Name": "Point Light",
+            "Position": "580,-0.000000349128,216.252",
+            "Tags": "light_point,light",
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "4b0df199-9d61-460f-a8d8-59eb33800ce6",
+                "Attenuation": 1,
+                "FogMode": "Enabled",
+                "FogStrength": 0.25,
+                "LightColor": "1,0.59318,0.23721,1",
+                "Radius": 400,
+                "Shadows": true
+              }
+            ]
+          },
+          {
+            "__guid": "8822ac56-563a-478c-8898-21ac0e1673ae",
+            "Flags": 0,
+            "Name": "Point Light",
+            "Position": "948,-0.000000349128,164",
+            "Tags": "light_point,light",
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "7f3130d0-a021-4c7d-813c-066e8510427a",
+                "Attenuation": 1,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "1,0.59318,0.23721,1",
+                "Radius": 400,
+                "Shadows": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "93b269be-3be1-4cd6-909e-b5b0fb1ea49b",
+        "Flags": 0,
+        "Name": "Decor",
+        "Enabled": true,
+        "Children": [
+          {
+            "__guid": "9c41f711-709a-469b-88f3-1f70581f7344",
+            "Flags": 0,
+            "Name": "old_bench",
+            "Position": "-256,424,32.06227",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "89e56c7f-fedf-4091-ae9a-b5f2f4d4ff07",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/sbox_props/benches/old_bench.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          },
+          {
+            "__guid": "e1f78fc9-4005-4ec1-a450-21e286baa44b",
+            "Flags": 0,
+            "Name": "old_bench (3)",
+            "Position": "128,424,32.06227",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "1037eff4-1d8a-4ac3-8ffe-dc6f600cd743",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/sbox_props/benches/old_bench.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          },
+          {
+            "__guid": "1d470011-cc26-45f5-90b8-91da62ed49c9",
+            "Flags": 0,
+            "Name": "old_bench (1)",
+            "Position": "-128,424,32.06227",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "1ae7b07d-ab2c-4599-8335-d51d157b32be",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/sbox_props/benches/old_bench.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          },
+          {
+            "__guid": "18b37f48-27b2-4bfd-8b01-4985745ac942",
+            "Flags": 0,
+            "Name": "old_bench (2)",
+            "Position": "256,424,32.06227",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "3ae00982-76be-412b-b234-7e6dc4866555",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/sbox_props/benches/old_bench.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [
+    "facepunch.old_bench"
+  ],
+  "__version": 1
+}

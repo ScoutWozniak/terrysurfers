@@ -1,0 +1,59 @@
+{
+  "RootObject": {
+    "Id": "ba71674e-441a-494c-aa69-b5d5bf7ea1e2",
+    "Name": "01",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "e27b7186-0fde-4d1b-a60d-8fc0186230c6",
+        "Name": "TrainCarriage (8)",
+        "Position": "-224,128,0",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "67bde20b-513a-467e-8307-01cf5dc0d260",
+        "Name": "TrainCarriage (9)",
+        "Position": "-32,128,-0.000002790362",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "c1ab55a5-a19f-4677-b0b7-aea73860268a",
+        "Name": "TrainCarriage (7)",
+        "Position": "160,0,-0.00001044813",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab"
+      },
+      {
+        "Id": "b6dd46d6-1b5c-478e-9178-cf97a42b2312",
+        "Name": "prototunnel (6)",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/prototunnel.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "ModelCollider",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Model": "models/prototunnel.vmdl",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

@@ -1,0 +1,25 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="title">TERRY SURFERS</div>
+	<button onclick=@StartGame><div class="text">Start!</div></button>
+</root>
+
+@code
+{
+
+	[Property] public PlayerControllerComponent Player { get; set; }
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	//protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+
+	void StartGame()
+	{
+		Player.StartMovement();
+		GameObject.Destroy();
+	}
+}

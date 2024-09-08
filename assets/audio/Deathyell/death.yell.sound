@@ -1,0 +1,29 @@
+{
+  "UI": false,
+  "Volume": "4",
+  "Pitch": "1",
+  "Decibels": 70,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "audio/deathyell/1yell9.vsnd",
+    "audio/deathyell/1yell8.vsnd",
+    "audio/deathyell/1yell5.vsnd",
+    "audio/deathyell/1yell4.vsnd",
+    "audio/deathyell/1yell3.vsnd",
+    "audio/deathyell/1yell2.vsnd",
+    "audio/deathyell/1yell16.vsnd",
+    "audio/deathyell/1yell15.vsnd",
+    "audio/deathyell/1yell14.vsnd",
+    "audio/deathyell/1yell13.vsnd",
+    "audio/deathyell/1yell12.vsnd",
+    "audio/deathyell/1yell10.vsnd",
+    "audio/deathyell/1yell1.vsnd"
+  ],
+  "Occlusion": false,
+  "AirAbsorption": true,
+  "Transmission": true,
+  "OcclusionRadius": 64,
+  "DistanceAttenuation": true,
+  "__references": [],
+  "__version": 0
+}

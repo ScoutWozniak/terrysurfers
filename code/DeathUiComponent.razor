@@ -1,0 +1,80 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="title">You fucked up</div>
+	<div class="text">You ran @Score.Distance m</div>
+	<div class="text">You collected @Score.Score coins</div>
+	<button onclick=@RestartScene><div class="text">Restart</div></button>
+
+	@* <div class="runleader">
+		@foreach(var entry in runEntries)
+		{
+			<div class="text">@entry.DisplayName</div>
+		}
+	</div>
+
+	<div class="coinleader">
+		@foreach (var entry in coinEntries)
+		{
+			<div class="text">AAA</div>
+		}
+	</div> *@
+</root>
+
+@code
+{
+
+	[Property] public string MyStringValue { get; set; } = "Hello World!";
+	[Property] public ScoreComp Score { get; set; }
+
+	[Property] SceneFile HACK { get; set;}
+
+	Sandbox.Services.Leaderboards.Entry[] runEntries;
+	Sandbox.Services.Leaderboards.Entry[] coinEntries;
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+
+	protected override void OnEnabled()
+	{
+		base.OnEnabled();
+		if (Score != null)
+		{
+			Sandbox.Services.Stats.SetValue("highscore-coins", Score.Score);
+			Sandbox.Services.Stats.SetValue("distanceran", Score.Distance);
+		}
+		GetRunLeaderBoard();
+		GetCoinLeaderBoard();
+	}
+
+	void GetRunLeaderBoard()
+	{
+		var board = Sandbox.Services.Leaderboards.Get("distanceran");
+
+		board.MaxEntries = 5;
+		board.Group = "global";
+		board.Refresh();
+		runEntries = board.Entries;
+	}
+
+	void GetCoinLeaderBoard()
+	{
+		var board = Sandbox.Services.Leaderboards.Get("highscore-coins");
+
+		board.MaxEntries = 5;
+		board.Group = "global";
+		board.Refresh();
+		coinEntries = board.Entries;
+		Log.Info(board.Entries);
+	}
+
+
+	void RestartScene()
+	{
+		GameManager.ActiveScene.Load(HACK);
+	}
+}

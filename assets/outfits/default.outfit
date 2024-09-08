@@ -1,0 +1,8 @@
+{
+  "Name": "Test",
+  "Clothing": [
+    "models/citizen_clothes/hair/big_scruffy_bread/big_scruffy_beard.clothing"
+  ],
+  "__references": [],
+  "__version": 0
+}

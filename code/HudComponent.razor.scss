@@ -1,0 +1,66 @@
+HudComponent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	border-radius: 20px;
+
+	.title {
+		font-size: 25px;
+		font-family: Poppins;
+		color: #fff;
+	}
+
+	.score {
+		font-size: 30px;
+		font-family: Poppins;
+		color: #fff;
+	}
+
+	.scoreCard {
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		width: 10%;
+		height: 7%;
+		background-color: dodgerblue;
+		border: 5px solid white;
+		border-radius: 15px 15px;
+		justify-content: center;
+		align-items: center;
+		transform: rotate(-5deg);
+	}
+
+	.distanceCard {
+		position: absolute;
+		top: 16%;
+		left: 7%;
+		width: 10%;
+		height: 7%;
+		background-color: dodgerblue;
+		border: 5px solid white;
+		border-radius: 15px 15px;
+		justify-content: center;
+		align-items: center;
+		transform: rotate(-5deg);
+	}
+
+	.coin {
+		position: absolute;
+		top: 1%;
+		left: 5%;
+		width: 8%;
+		height: 8%;
+
+		transform: rotate(-5deg);
+
+		img {
+			width: 100%;
+			aspect-ratio: 1.074;
+		}
+	}
+}

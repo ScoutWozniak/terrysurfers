@@ -1,0 +1,38 @@
+{
+  "RootObject": {
+    "Id": "aff8a2b6-9802-40f0-8e41-69c48e9f6249",
+    "Name": "default",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "a5e71e82-401b-4e3e-a4db-3f1841ee3c9b",
+        "Name": "prototunnel (1)",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/prototunnel.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "ModelCollider",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Model": "models/prototunnel.vmdl",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

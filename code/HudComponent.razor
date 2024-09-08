@@ -1,0 +1,69 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System;
+@inherits PanelComponent
+
+<style>
+    .powerUp {
+        width:20%;
+        height:8%;
+        flex-direction:row;
+        position:absolute;
+        bottom:10%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .Icon {
+        width:20%;
+        height:100%;
+        background-color:blue;
+        justify-content:center;
+        align-items:center;
+        display:flex;
+    }
+
+    i {
+        color:white;
+        font-size: 64px;
+    }
+
+    .barBg {
+        width:75%;
+        height:75%;
+        background-color:gray;
+        padding:2%;
+    }
+    .barFg {
+        height:100%;
+        width:100%;
+        background-color:orange;
+    }
+</style>
+
+<root>
+	<div class="scoreCard"><div class="score">@Score.Score</div></div>
+	<div class="coin"><img src="/ui/coin.png" /></div>
+	<div class="distanceCard"><div class="score">@(MathF.Round(Score.Distance)) m</div></div>
+
+	<div class="powerUp">
+        <div class="Icon"><i>roller_skating</i></div>
+        <div class="barBg">
+            <div class="barFg"></div>
+        </div>
+    </div>
+</root>
+
+@code
+{
+
+	[Property] public string MyStringValue { get; set; } = "Hello World!";
+
+	[Property] public ScoreComp Score { get; set; }
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( Score.Score, Score.Distance );
+}

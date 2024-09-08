@@ -1,0 +1,47 @@
+{
+  "RootObject": {
+    "__guid": "97a3abe4-59a6-4f25-94eb-b789d444d0a1",
+    "Flags": 0,
+    "Name": "coin",
+    "Tags": "coin",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "037dd7bc-2f3c-4978-b1e3-42362d73c501",
+        "BodyGroups": 18446744073709551615,
+        "MaterialOverride": "materials/uf-rts/gold.vmat",
+        "Model": "models/protocoin.vmdl",
+        "RenderType": "On",
+        "Tint": "0.97525,0.76069,0,1"
+      },
+      {
+        "__type": "Sandbox.SphereCollider",
+        "__guid": "3c73e193-a9cd-42ee-911d-f67031d653aa",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 15.700003,
+        "Static": false
+      },
+      {
+        "__type": "CoinComponent",
+        "__guid": "87e58556-44d0-4796-b33c-5f076f41da51",
+        "CollectParticle": {
+          "_type": "gameobject",
+          "prefab": "prefabs/particles/coin_collect.prefab"
+        },
+        "RotationSpeed": 5
+      }
+    ],
+    "Children": [],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [
+    "titanovsky.ufrts_resource_gold1"
+  ],
+  "__version": 1
+}

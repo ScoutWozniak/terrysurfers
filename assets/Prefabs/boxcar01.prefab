@@ -1,0 +1,51 @@
+{
+  "RootObject": {
+    "Id": "b3ea7f0b-a3ea-453b-bd96-4e1b8ec2f751",
+    "Name": "boxcar01",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ModelRenderer",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/protobox.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "ModelCollider",
+        "__enabled": true,
+        "IsTrigger": false,
+        "Model": "models/protobox.vmdl",
+        "Static": false,
+        "Surface": null
+      }
+    ],
+    "Children": [
+      {
+        "Id": "48ec6966-b3c3-4eaf-8729-e93e9ce65f1f",
+        "Name": "Object",
+        "Position": "-32.38361,0,56",
+        "Tags": "death",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "BoxCollider",
+            "__enabled": true,
+            "Center": "0,0,0",
+            "IsTrigger": true,
+            "Scale": "152.3,115.7,87.39999",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

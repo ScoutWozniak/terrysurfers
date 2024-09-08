@@ -1,0 +1,835 @@
+{
+  "RootObject": {
+    "Id": "a7bd3671-7b10-4b05-b9ca-193e7d55af75",
+    "Name": "background01",
+    "Enabled": true,
+    "Children": [
+      {
+        "Id": "e471a2cd-690b-42c4-94de-ee4a0519e3f5",
+        "Name": "Section",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "6855d7e7-201b-4ca1-b901-ab099eb79c36",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "1bc5c89d-3348-419a-8b35-8211ed3bb843",
+            "Name": "prototunnel",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "b571ab6e-09de-4a49-ad4e-352b8fad2a68",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "6b472e94-c5bf-497f-800c-b86f621fbada",
+        "Name": "Section (5)",
+        "Position": "2304,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "dc6a2a40-ac8d-4d08-9f03-067e09445822",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "c5893a74-cbfc-4a8e-970c-bcbd58c55b58",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "09f40cf0-7642-4303-bca7-94e612a7b71c",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "dd54f2f7-3db5-4119-a3b1-87971164a02e",
+        "Name": "Section (9)",
+        "Position": "4608,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "82052aec-d294-4d49-9a6d-037860ac4a3e",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "42dbc68a-aa6a-401f-927b-2e5186c80883",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "064eb8f5-42c7-4cd8-9c7c-e944452fa752",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "cab89e79-ec45-4fb9-8c89-a2bef9c65911",
+        "Name": "Section (1)",
+        "Position": "576,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "bc3d3551-c941-4941-8579-b212a3bd67ab",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "aa646670-5e05-443d-839b-150e234852d8",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "90359942-ebfd-4889-887c-afe0997d016a",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "b0ffa15b-7d8e-440c-8b8e-e42b02061b69",
+        "Name": "Section (6)",
+        "Position": "2880,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "be68976c-f839-4ffd-92b9-4ffdf123dee9",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "e00b94af-0cf0-4515-9ef2-48b124a65b03",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "e645a778-9d3d-47f8-80f2-f5cbfb387908",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "f3591e60-88c2-4241-ac38-08fe0cbf24c5",
+        "Name": "Section (10)",
+        "Position": "5184,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "09e7bae5-1058-4dac-912b-7b15fb516b69",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "12176140-43e4-4aae-87be-a668183b290b",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "cefede79-9feb-4d48-bfa5-8f9a55ef6f66",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "8cc40c2f-24ec-4cf0-920a-dfe9a7d70e3a",
+        "Name": "Section (2)",
+        "Position": "1152,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "849b170a-3fdb-4a74-b139-7ea25769cc5d",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "69071a1e-f94e-4848-a7f2-e386baa54486",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "bb4d5e93-dea5-463b-a163-fe5a34895be4",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "1cbfe66a-1d10-474c-91ac-80a66c85ac34",
+        "Name": "Section (7)",
+        "Position": "3456,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "357d6587-17b2-43cb-860a-2e5f16efa941",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "c69537e1-752d-47c8-8d97-11c898184c15",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "ad6de308-6642-434f-a71d-b6bacc8dcf1a",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "049c2f6b-7448-4a07-9dce-d3069e937978",
+        "Name": "Section (11)",
+        "Position": "5760,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "a9abb535-bfce-4aa3-9190-d0693d9eee08",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "72cf4d0e-0216-4f69-8902-d8fa2a648bdd",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "190cf19e-5772-4fcb-9deb-a29e8d5b961d",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "e2db0416-d92b-4c39-9a5e-873281b7cffa",
+        "Name": "Section (3)",
+        "Position": "1728,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "2c2d5efe-88a9-47c9-a162-3cb48ebd3fa5",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "aa503cf3-ab3f-4b24-bd9c-d6866229fc57",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "81ad848e-5e42-420a-8006-b7044220620b",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "6f5fd0d0-1f15-4685-8f03-9166ca0cf74c",
+        "Name": "Section (4)",
+        "Position": "4032,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "1523a72f-5593-4690-af98-fb056573bf6d",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "99933981-1769-402f-99e4-845ea8cea648",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "69607ff8-60c5-4505-a858-c28f34d3e818",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "8534081b-9ae8-402c-bde3-1923abfc1ba7",
+        "Name": "Section (8)",
+        "Position": "6336,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "cbfbbcb0-7104-4b4d-bd95-f5e96433f880",
+            "Name": "Spot Light",
+            "Position": "-32,-0.000001719738,544",
+            "Rotation": "-0.00000004184114,0.7019778,0.0000000000000007096964,0.712199",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "SpotLight",
+                "__enabled": true,
+                "Attenuation": 1,
+                "ConeInner": 15,
+                "ConeOuter": 45,
+                "Cookie": null,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 1919.0992
+              }
+            ]
+          },
+          {
+            "Id": "6d5144cc-6ff5-499f-a197-ee799ce5a577",
+            "Name": "prototunnel",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/prototunnel.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/prototunnel.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "bd7a2a7f-a1cf-48a6-8966-44c7c430232d",
+            "Name": "Point Light",
+            "Position": "0,0,288",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "PointLight",
+                "__enabled": true,
+                "LightColor": "0.91373,0.98039,1,1",
+                "Radius": 800
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "69dfe22f-c0ff-4108-afb2-4ab35e1c516c",
+        "Name": "Plane",
+        "Position": "6688,0,0",
+        "Rotation": "0.0000000000005684342,-0.7071065,-0.0000000000005684342,0.707107",
+        "Scale": "16,16,1",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": "materials/black_matte.vmat",
+            "Model": "models/dev/plane.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

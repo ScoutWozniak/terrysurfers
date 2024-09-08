@@ -1,0 +1,52 @@
+{
+  "RootObject": {
+    "Id": "9f2b842a-2ec4-410d-9dce-6c50ef4ba1c2",
+    "Name": "boxcarramp",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ModelRenderer",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/protoramp.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "ModelCollider",
+        "__enabled": true,
+        "IsTrigger": false,
+        "Model": "models/protoramp.vmdl",
+        "Static": false,
+        "Surface": null
+      }
+    ],
+    "Children": [
+      {
+        "Id": "3d236346-a191-43f6-8506-95487777eb84",
+        "Name": "Object",
+        "Position": "15.81973,-0.0000009960122,16.20883",
+        "Rotation": "0.00000002565239,0.5096583,-0.00000001368386,0.8603777",
+        "Tags": "death",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "BoxCollider",
+            "__enabled": true,
+            "Center": "0,0,0",
+            "IsTrigger": false,
+            "Scale": "75.09998,133.3,136.7",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

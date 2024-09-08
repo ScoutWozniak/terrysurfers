@@ -1,0 +1,65 @@
+{
+  "RootObject": {
+    "Id": "76a7eed8-e014-41d9-a5ff-0bbbeb244bf0",
+    "Name": "portal",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ModelRenderer",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/protoportal.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": [
+      {
+        "Id": "efef5347-4ba3-4919-bb0c-55e8fe9620cb",
+        "Name": "Plane",
+        "Rotation": "0.7071065,-0.0000008738458,-0.707107,-0.0000008738452",
+        "Scale": "1.6,3.399998,1",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": "materials/portal.vmat",
+            "Model": "models/dev/plane.vmdl",
+            "RenderType": "Off",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "Id": "c0f4deb9-1d72-4c7d-8f86-9e4fe01e6e0b",
+        "Name": "LevelChangeTrigger",
+        "Tags": "trigger",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "BoxCollider",
+            "__enabled": true,
+            "Center": "0,0,0",
+            "IsTrigger": true,
+            "Scale": "26.19998,542.4001,415.6",
+            "Static": false,
+            "Surface": null
+          },
+          {
+            "__type": "LevelChangeComponent",
+            "__enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
