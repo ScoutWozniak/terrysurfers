@@ -137,6 +137,12 @@
                 "component_id": "75eba159-669c-4014-a70d-4ef28b8f20c8",
                 "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
                 "component_type": "ModelPhysics"
+              },
+              "Score": {
+                "_type": "component",
+                "component_id": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
+                "go": "b4d56c78-21d3-46a1-9558-79faeb790096",
+                "component_type": "ScoreComp"
               }
             }
           ]
