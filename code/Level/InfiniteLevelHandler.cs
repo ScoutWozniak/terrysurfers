@@ -73,10 +73,12 @@ public sealed class InfiniteLevelHandler : Component
 		var newObstacle = SegmentPrefabs.ElementAt( Game.Random.Int( SegmentPrefabs.Count - 1 ) ).Clone();
 		newObstacle.SetParent( go );
 		newObstacle.Transform.World = go.Transform.World;
+		newObstacle.Transform.ClearInterpolation();
 
 		var newScenery = CurrentTheme.Prefabs.ElementAt( Game.Random.Int( CurrentTheme.Prefabs.Count - 1 ) ).Clone();
 		newScenery.SetParent( go );
 		newScenery.Transform.World = go.Transform.World;
+		newScenery.Transform.ClearInterpolation();
 
 		Segments = Segments.Append( go ).ToList();
 	}

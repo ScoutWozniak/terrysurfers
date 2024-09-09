@@ -2,13 +2,14 @@ using Sandbox;
 
 public sealed class RunBoots : Component, IPowerupListener
 {
+	[Property] float SpeedIncrease { get; set; } = 0.5f;
 	void IPowerupListener.OnPowerupCollected( Powerup powerup )
 	{
-		GameGlobals.SpeedMultiplier += 4.0f;
+		Scene.GetSystem<GlobalSystem>().Get<PlayerGlobals>().RunMultiplier += SpeedIncrease;
 	}
 
 	void IPowerupListener.RemoveEffects()
 	{
-		GameGlobals.SpeedMultiplier -= 4.0f;
+		Scene.GetSystem<GlobalSystem>().Get<PlayerGlobals>().RunMultiplier -= SpeedIncrease;
 	}
 }

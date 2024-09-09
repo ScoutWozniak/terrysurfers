@@ -42,9 +42,12 @@ public sealed class PlayerControllerComponent : Component, IGameEventHandler<OnS
 
 	float Gravity { get { return CharController.Velocity.z >= 0.0f ? JumpGravity : FallGravity; } }
 
+	private PlayerGlobals Globals { get; set; }
+
 	protected override void OnEnabled()
 	{
 		CalculateJumpHeight();
+		Globals = Scene.GetSystem<GlobalSystem>().Get<PlayerGlobals>();
 	}
 
 	protected override void OnUpdate()
@@ -85,8 +88,8 @@ public sealed class PlayerControllerComponent : Component, IGameEventHandler<OnS
 
 		Vector3 DirVec = (Vector3.Forward + Vector3.Left).Normal;
 
-		Velocity = Vector3.Forward * DirVec.x * 1000.0f * Score.GetSpeedMult() * GameGlobals.SpeedMultiplier;
-		Velocity += Vector3.Left * DirVec.y * dir * 500.0f;
+		Velocity = Vector3.Forward * DirVec.x * 1000.0f * Score.GetSpeedMult() * Globals.RunMultiplier;
+		Velocity += Vector3.Left * DirVec.y * dir * 500.0f * Globals.RunMultiplier;
 
 		CharController.Accelerate( Velocity );
 		CharController.ApplyFriction( 4.0f );
@@ -95,7 +98,7 @@ public sealed class PlayerControllerComponent : Component, IGameEventHandler<OnS
 		if ( CharController.IsOnGround && (Input.Pressed( "Forward" ) || Input.Pressed( "Jump" )))
 		{
 			float flGroundFactor = 1.0f;
-			float flMul = JumpVelocity * GameGlobals.JumpMultiplier;
+			float flMul = JumpVelocity * Globals.JumpMultiplier;
 
 			CharController.Punch( Vector3.Up * flMul * flGroundFactor );
 		}

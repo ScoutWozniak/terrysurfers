@@ -338,27 +338,6 @@
           ]
         },
         {
-          "__guid": "150d7b5a-5ea2-4f0d-b296-e10da0a054ba",
-          "Flags": 0,
-          "Name": "ShadowDecal",
-          "Position": "0,0,0.1868484",
-          "Rotation": "-0.0000000000003126388,0.7071065,-0.0000000000003126388,0.707107",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.DecalRenderer",
-              "__guid": "fbd927ff-3e4c-49dc-8522-6b6b14cf975c",
-              "CutoffAngle": 60,
-              "CutoffAngleSoftness": 5,
-              "Material": "materials/decals/default.vmat",
-              "Mod2XBlending": false,
-              "Size": "32,32,256",
-              "TintColor": "1,1,1,1",
-              "TriPlanar": false
-            }
-          ]
-        },
-        {
           "__guid": "d3decd51-0f3d-4037-ad84-12e3759c16cd",
           "Flags": 0,
           "Name": "Body",
@@ -1656,25 +1635,44 @@
     {
       "__guid": "6f2947f1-2ac8-40d5-9bbe-90ac4b5bf69e",
       "Flags": 0,
-      "Name": "Powerup",
-      "Position": "776,0.00009432572,48",
+      "Name": "SpeedBoots",
+      "Position": "592,-120,25.4327",
+      "Enabled": true,
       "Components": [
         {
           "__type": "Sandbox.SphereCollider",
           "__guid": "8920656f-9ff7-42af-9046-a82be93ac0c7",
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Radius": 22.899975,
+          "Radius": 32,
           "Static": false
         },
         {
           "__type": "Powerup",
           "__guid": "07d4bada-defb-473a-9448-33c11b8f8715",
-          "Name": "Running Boots"
+          "Duration": 4,
+          "Name": "Running Boots",
+          "OnCollect": {
+            "__version": 7,
+            "__guid": "6561fac0-96e5-4ee6-9272-8bdae66aa016",
+            "UserData": {
+              "Title": "On Collect",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              }
+            ],
+            "Links": []
+          }
         },
         {
           "__type": "RunBoots",
-          "__guid": "6d40d7c8-ace5-4b44-bd19-e0b80fcf4759"
+          "__guid": "6d40d7c8-ace5-4b44-bd19-e0b80fcf4759",
+          "SpeedIncrease": 0.5
         }
       ],
       "Children": [
@@ -1699,6 +1697,81 @@
             {
               "__type": "Sandbox.HighlightOutline",
               "__guid": "c168330f-be44-4075-9ddf-af582e17556e",
+              "Color": "1,0.83333,0,1",
+              "InsideColor": "0,0,0,0",
+              "InsideObscuredColor": "0,0,0,0",
+              "ObscuredColor": "0,0,0,0.4",
+              "Width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "adb02765-7413-4fcd-9113-1a6c1469d92f",
+      "Flags": 0,
+      "Name": "JumpBoots",
+      "Position": "592,120,52.80226",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SphereCollider",
+          "__guid": "6201119d-dda4-4c8e-9863-08ab3d8771ba",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Radius": 32,
+          "Static": false
+        },
+        {
+          "__type": "Powerup",
+          "__guid": "96304fa0-6d0a-44ca-98d6-bfb0b5119049",
+          "Duration": 4,
+          "Name": "JumpBoots",
+          "OnCollect": {
+            "__version": 7,
+            "__guid": "29aa90d5-736d-421c-9bc2-84978683e4bd",
+            "UserData": {
+              "Title": "On Collect",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              }
+            ],
+            "Links": []
+          }
+        },
+        {
+          "__type": "JumpBoots",
+          "__guid": "c120e4f3-6101-4d15-b41a-4422b422020a",
+          "JumpIncrease": 0.5
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "4ad25433-f434-44cc-9f44-1f8b4ad68bb1",
+          "Flags": 0,
+          "Name": "Model",
+          "Position": "0,0,-8.483612",
+          "Scale": "2.428846,2.428846,2.428846",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "1dd622ee-6351-4b53-8c19-d895298308db",
+              "BodyGroups": 18446744073709551615,
+              "CreateBoneObjects": false,
+              "Model": "models/citizen_clothes/shoes/boxing_boots/models/boxing_boots_blue.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.HighlightOutline",
+              "__guid": "4f316eeb-eb51-4f4a-a54c-b9720ae001ef",
               "Color": "1,0.83333,0,1",
               "InsideColor": "0,0,0,0",
               "InsideObscuredColor": "0,0,0,0",
@@ -1736,6 +1809,12 @@
           "__type": "GameStateManager",
           "__guid": "f19bd3d4-f080-4957-9d6b-ee9ccefff767",
           "GameState": "Menu"
+        },
+        {
+          "__type": "PlayerGlobals",
+          "__guid": "11c5e8f4-0c2d-4388-b6b8-431503fabc9d",
+          "JumpMultiplier": 1,
+          "RunMultiplier": 1
         }
       ]
     },

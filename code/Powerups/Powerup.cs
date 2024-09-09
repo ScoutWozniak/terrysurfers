@@ -7,6 +7,28 @@ public sealed class Powerup : Component, Component.ITriggerListener
 
 	[Property] string Name { get; set; }
 
+	[Property] float Duration { get; set; } = 2.0f;
+
+	private TimeUntil UntilExpired { get; set; }
+
+	private bool IsActive { get; set; }
+
+	protected override void OnFixedUpdate()
+	{
+		base.OnFixedUpdate();
+		if ( IsActive )
+		{
+			if ( UntilExpired <= 0 )
+			{
+				IsActive = false;
+				foreach ( var listener in Components.GetAll<IPowerupListener>() )
+				{
+					listener.RemoveEffects();
+				}
+			}
+		}
+	}
+
 
 	void ITriggerListener.OnTriggerEnter(Sandbox.Collider other)
 	{
@@ -17,6 +39,8 @@ public sealed class Powerup : Component, Component.ITriggerListener
 			{
 				listener.OnPowerupCollected( this );
 			}
+			IsActive = true;
+			UntilExpired = Duration;
 		}
 	}
 }
