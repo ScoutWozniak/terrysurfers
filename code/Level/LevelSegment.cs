@@ -14,7 +14,7 @@ public sealed class LevelSegment : Component
 	protected override void DrawGizmos()
 	{
 		base.DrawGizmos();
-		if ( !IsObstacles )
+		if ( !IsObstacles || Scene.Root != GameObject )
 			return;
 
 		var model = Model.Load( "models/dev_segment_outline.vmdl" );

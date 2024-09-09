@@ -1,4 +1,5 @@
 using Sandbox;
+using Sandbox.Events;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -34,7 +35,7 @@ public sealed class InfiniteLevelHandler : Component
 		if (!Player.IsValid() )
 			return;
 
-		if ( Player.Transform.Position.x >= GameGlobals.SegmentLength )
+		if ( Player.Transform.Position.x >= GameGlobals.SegmentLength && GameStateManager.Instance.GameState == GameStates.Playing )
 		{
 			Scene.GetSystem<WorldShiftSystem>().QueueShift = true;
 		}
@@ -54,7 +55,7 @@ public sealed class InfiniteLevelHandler : Component
 			AddSegment();
 		}
 
-		
+		Scene.Dispatch( new OnLevelShift( GameGlobals.SegmentLength ) );
 		foreach ( var obj in Segments )
 		{
 			foreach( var segment in obj.Components.GetAll<LevelSegment>( FindMode.EnabledInSelfAndDescendants ))
@@ -68,7 +69,6 @@ public sealed class InfiniteLevelHandler : Component
 	{
 		var go = new GameObject(true, "Segment");
 		go.Transform.Position = Vector3.Forward * GameGlobals.SegmentLength * Segments.Count;
-		Log.Info( GameGlobals.SegmentLength );
 
 		var newObstacle = SegmentPrefabs.ElementAt( Game.Random.Int( SegmentPrefabs.Count - 1 ) ).Clone();
 		newObstacle.SetParent( go );
@@ -79,6 +79,5 @@ public sealed class InfiniteLevelHandler : Component
 		newScenery.Transform.World = go.Transform.World;
 
 		Segments = Segments.Append( go ).ToList();
-
 	}
 }

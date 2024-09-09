@@ -18,6 +18,7 @@
         "Flags": 0,
         "Name": "boxcar01",
         "Position": "96,-8,0",
+        "Tags": "obstacle",
         "Enabled": true,
         "__Prefab": "prefabs/boxcar01.prefab",
         "__PrefabVariables": {}
@@ -27,6 +28,7 @@
         "Flags": 0,
         "Name": "boxcar01 (1)",
         "Position": "288,-8,0",
+        "Tags": "obstacle",
         "Enabled": true,
         "__Prefab": "prefabs/boxcar01.prefab",
         "__PrefabVariables": {}
@@ -36,8 +38,50 @@
         "Flags": 0,
         "Name": "boxcar01 (2)",
         "Position": "480,-8,0",
+        "Tags": "obstacle",
         "Enabled": true,
         "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "17065a38-090a-4f87-aa6e-e920a852ac19",
+        "Flags": 0,
+        "Name": "smallobstacle",
+        "Position": "280,-124,-0.00003051758",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/smallobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "3d2ed71e-3af2-4db0-a141-18abebea955e",
+        "Flags": 0,
+        "Name": "boxcarramp",
+        "Position": "880,-128,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcarramp.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "2f598afa-d22b-4efc-946c-227b9995bcb3",
+        "Flags": 0,
+        "Name": "boxcar01 (3)",
+        "Position": "1072,-128,0.00001525879",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "75b324b3-e811-4964-be07-68f38d267a9e",
+        "Flags": 0,
+        "Name": "underobstacle",
+        "Position": "988,0,2",
+        "Rotation": "0,0,1,0.0000001947072",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/underobstacle.prefab",
         "__PrefabVariables": {}
       }
     ],

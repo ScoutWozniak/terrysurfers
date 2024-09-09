@@ -1,51 +1,53 @@
 {
   "RootObject": {
-    "Id": "b334f901-8d53-4595-889a-fed590ac774f",
+    "__guid": "b334f901-8d53-4595-889a-fed590ac774f",
+    "Flags": 0,
     "Name": "smallobstacle",
+    "Tags": "obstacle",
     "Enabled": true,
     "Components": [
       {
-        "__type": "ModelRenderer",
-        "__enabled": true,
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "412373bf-7573-44d9-849e-bae105b15a4f",
         "BodyGroups": 18446744073709551615,
-        "MaterialGroup": null,
-        "MaterialOverride": null,
         "Model": "models/protosmall.vmdl",
         "RenderType": "On",
         "Tint": "1,1,1,1"
       },
       {
-        "__type": "ModelCollider",
-        "__enabled": true,
+        "__type": "Sandbox.ModelCollider",
+        "__guid": "9fb5b15d-a06d-44f3-9a12-fccaced9e126",
         "IsTrigger": false,
         "Model": "models/protosmall.vmdl",
-        "Static": false,
-        "Surface": null
+        "Static": false
       }
     ],
     "Children": [
       {
-        "Id": "a5e451c3-ef9f-4fa7-a596-815d0a5acb13",
+        "__guid": "a5e451c3-ef9f-4fa7-a596-815d0a5acb13",
+        "Flags": 0,
         "Name": "Object",
         "Position": "0,0,28",
         "Tags": "death",
         "Enabled": true,
         "Components": [
           {
-            "__type": "BoxCollider",
-            "__enabled": true,
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "615b7288-fae0-4b89-b440-8b5715ea5613",
             "Center": "0,0,0",
             "IsTrigger": false,
             "Scale": "37.50002,109.3998,58.79996",
-            "Static": false,
-            "Surface": null
+            "Static": false
           }
         ]
       }
-    ]
+    ],
+    "__variables": []
   },
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
-  "__references": []
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
 }

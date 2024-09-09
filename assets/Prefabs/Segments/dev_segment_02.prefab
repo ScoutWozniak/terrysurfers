@@ -84,6 +84,41 @@
             "Static": false
           }
         ]
+      },
+      {
+        "__guid": "e4572742-4ed9-41e0-8c6e-9afe4ef1de75",
+        "Flags": 0,
+        "Name": "tree_oak_small_a",
+        "Position": "784.5419,-398.7154,19.46555",
+        "Rotation": "0,0,0.258819,0.9659258",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "a3b262ba-a8c6-43fb-9bc6-1244e3848182",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "aa317495-4d41-4c86-9e77-6d610f4beef2",
+        "Flags": 0,
+        "Name": "tree_oak_small_a (1)",
+        "Position": "334.335,365.808,19.46525",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "be640982-1d94-46e3-92e7-bab636122261",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
       }
     ],
     "__variables": []
@@ -92,6 +127,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__references": [],
+  "__references": [
+    "facepunch.tree_oak_small_a"
+  ],
   "__version": 1
 }

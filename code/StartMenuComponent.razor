@@ -19,6 +19,7 @@
 
 	void StartGame()
 	{
+        Scene.Components.Get<GameStateManager>(FindMode.InDescendants).GameState = GameStates.Playing;
 		Player.StartMovement();
 		GameObject.Destroy();
 	}

@@ -1,56 +1,59 @@
 {
   "RootObject": {
-    "Id": "4d8c2a97-b4d2-46d6-bd76-5379159f7e4d",
+    "__guid": "4d8c2a97-b4d2-46d6-bd76-5379159f7e4d",
+    "Flags": 0,
     "Name": "underobstacle",
+    "Tags": "obstacle",
     "Enabled": true,
     "Children": [
       {
-        "Id": "e50fc693-e9e4-4a8e-8a1e-e0291df111f2",
+        "__guid": "e50fc693-e9e4-4a8e-8a1e-e0291df111f2",
+        "Flags": 0,
         "Name": "Object",
         "Position": "0,0,93.46672",
         "Tags": "death",
         "Enabled": true,
         "Components": [
           {
-            "__type": "BoxCollider",
-            "__enabled": true,
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "456976b5-5cb9-44d7-bd4a-a54c6728ad0b",
             "Center": "0,0,0",
             "IsTrigger": false,
             "Scale": "36,108.9,67.29998",
-            "Static": false,
-            "Surface": null
+            "Static": false
           }
         ]
       },
       {
-        "Id": "770d3bce-ebaf-4b34-9e5a-cbbc393d3907",
+        "__guid": "770d3bce-ebaf-4b34-9e5a-cbbc393d3907",
+        "Flags": 0,
         "Name": "Object",
         "Enabled": true,
         "Components": [
           {
-            "__type": "ModelRenderer",
-            "__enabled": true,
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "7493093c-561b-472d-a882-fac301370f1b",
             "BodyGroups": 18446744073709551615,
-            "MaterialGroup": null,
-            "MaterialOverride": null,
             "Model": "models/protounder.vmdl",
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
           {
-            "__type": "ModelCollider",
-            "__enabled": true,
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "03c60f83-896f-4b0f-9a0d-c00766690f48",
             "IsTrigger": false,
             "Model": "models/protounder.vmdl",
-            "Static": false,
-            "Surface": null
+            "Static": false
           }
         ]
       }
-    ]
+    ],
+    "__variables": []
   },
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
-  "__references": []
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
 }
