@@ -69,7 +69,6 @@ public sealed class InfiniteLevelHandler : Component
 	{
 		var go = new GameObject(true, "Segment");
 		go.Transform.Position = Vector3.Forward * GameGlobals.SegmentLength * Segments.Count;
-		Log.Info( GameGlobals.SegmentLength );
 
 		var newObstacle = SegmentPrefabs.ElementAt( Game.Random.Int( SegmentPrefabs.Count - 1 ) ).Clone();
 		newObstacle.SetParent( go );

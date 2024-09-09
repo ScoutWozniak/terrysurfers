@@ -55,8 +55,6 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 			TrackObject();
 
 		Transform.Position = Transform.Position.LerpTo( TargetPosition, Time.Delta * 10.0f );
-
-		Log.Info( TargetPosition );
 	}
 
 	void GoToObject()

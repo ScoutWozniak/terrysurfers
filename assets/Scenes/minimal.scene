@@ -77,8 +77,7 @@
             "component_id": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
             "go": "b4d56c78-21d3-46a1-9558-79faeb790096",
             "component_type": "ScoreComp"
-          },
-          "SideMoveTime": 0.1
+          }
         },
         {
           "__type": "Sandbox.ModelPhysics",
@@ -1647,7 +1646,6 @@
       "Flags": 0,
       "Name": "Powerup",
       "Position": "776,0.00009432572,48",
-      "Enabled": true,
       "Components": [
         {
           "__type": "Sandbox.SphereCollider",

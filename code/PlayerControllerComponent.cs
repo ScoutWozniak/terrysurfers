@@ -30,14 +30,7 @@ public sealed class PlayerControllerComponent : Component
 	float JumpGravity { get; set; }
 	float FallGravity { get; set; }
 
-	float Gravity { get { return CharController.Velocity.y >= 0.0f ? JumpGravity : FallGravity; } }
-
-	[Property] float SideMoveTime { get; set; }
-
-
-	float SideMoveTargetVel { get; set; }
-	float SideMoveVel { get; set; }
-
+	float Gravity { get { return CharController.Velocity.z >= 0.0f ? JumpGravity : FallGravity; } }
 
 	CitizenAnimationHelper.SpecialMoveStyle MoveStyle { get; set; }
 
@@ -50,15 +43,13 @@ public sealed class PlayerControllerComponent : Component
 	protected override void OnEnabled()
 	{
 		CalculateJumpHeight();
-
-		SideMoveTargetVel = (122.0f) / SideMoveTime;
 	}
 
 	protected override void OnUpdate()
 	{
 		if ( MovementMult == 0.0f )
 			return;
-		AnimHelper.WithVelocity( Transform.Rotation.Forward * 300.0f + Transform.Rotation.Left * SideMoveVel );
+		AnimHelper.WithVelocity( CharController.Velocity / 2 );
 		AnimHelper.IsGrounded = CharController.IsOnGround;
 		AnimHelper.SpecialMove = MoveStyle;
 	}
@@ -83,40 +74,34 @@ public sealed class PlayerControllerComponent : Component
 
 
 		// Side to side movement
+		int dir = 0;
+		if ( Input.Down( "Left" ) )
+			dir = 1;
+		if ( Input.Down( "Right" ) )
+			dir = -1;
 
-		if (Input.Pressed("Left"))
-			QueueMovement( 1 );
+		Vector3 Velocity = new();
+		Vector3 DirVec = (Vector3.Forward + Vector3.Left).Normal;
 
-		if (Input.Pressed("Right"))
-			QueueMovement( -1 );
+		Velocity += Vector3.Forward * DirVec.x * 1000.0f * Score.GetSpeedMult() * GameGlobals.SpeedMultiplier;
+		Velocity += Vector3.Left * DirVec.y * dir * 500.0f;
 
-		CharController.Accelerate( Vector3.Forward * 500.0f * Score.GetSpeedMult() * GameGlobals.SpeedMultiplier );
-		CharController.Velocity = CharController.Velocity.WithY( SideMoveVel );
-		CharController.ApplyFriction( 2.0f );
-
-
-		if (Movements.Count > 0 && !Moving)
-		{
-			_ = MoveToSide(Movements.First());
-		}
+		CharController.Accelerate( Velocity );
+		CharController.ApplyFriction( 4.0f );
 
 
-		if ( CharController.IsOnGround && (Input.Down( "Forward" ) || Input.Down( "Jump" )))
+		if ( CharController.IsOnGround && (Input.Pressed( "Forward" ) || Input.Pressed( "Jump" )))
 		{
 			float flGroundFactor = 1.0f;
 			float flMul = JumpVelocity * GameGlobals.JumpMultiplier;
-			//if ( Duck.IsActive )
-			//	flMul *= 0.8f;
 
 			CharController.Punch( Vector3.Up * flMul * flGroundFactor );
-			//	cc.IsOnGround = false;
 		}
-
-		CharController.Move();
 
 		if ( !CharController.IsOnGround )
 		{
 			var gravMult = 1.0f;
+
 			if ( Input.Down( "Backward" ) )
 				gravMult = 4.0f;
 
@@ -133,12 +118,9 @@ public sealed class PlayerControllerComponent : Component
 			_ = Duck();
 		}
 
-		RunPartcles.Enabled = CharController.IsOnGround;
+		CharController.Move();
 
-		if (!Moving)
-		{
-			Transform.Position = Transform.Position.WithY( MathF.Round( Transform.Position.y / 128.0f ) * 128.0f );
-		}
+		RunPartcles.Enabled = CharController.IsOnGround;
 	}
 
 
@@ -154,29 +136,7 @@ public sealed class PlayerControllerComponent : Component
 		MoveStyle = CitizenAnimationHelper.SpecialMoveStyle.None;
 	}
 
-	List<float> Movements = new List<float>();
-	async Task MoveToSide(float to)
-	{
-		Moving = true;
-		TimeSince timeSince = 0;
-
-		while ( timeSince < SideMoveTime )
-		{
-			if ( !GameObject.IsValid() )
-				return;
-			SideMoveVel = to * SideMoveTargetVel;
-			await Task.FixedUpdate(); // wait one frame
-		}
-		Moving = false;
-		SideMoveVel = 0.0f;
-		Movements.RemoveAt( 0 );
-	}
-
-	void QueueMovement(float dir)
-	{
-		Movements.Add( dir );
-	}
-
+	
 	public void StartMovement()
 	{
 		MovementMult = 1;
