@@ -13,9 +13,6 @@ public sealed class PlayerTriggerComponent : Component, Component.ITriggerListen
 	{
 		if ( other.Tags.Has( "death" ) )
 			OnDeath();
-		else if ( other.Tags.Has( "coin" ) ) 
-			CollectCoin( other.GameObject );
-		
 	}
 
 
@@ -28,11 +25,5 @@ public sealed class PlayerTriggerComponent : Component, Component.ITriggerListen
 		DeathUi.GameObject.Enabled = true;
 		Sound.Play( "death.yell", Transform.Position );
 		Scene.Components.Get<GameStateManager>( FindMode.InDescendants ).GameState = GameStates.GameOver;
-	}
-
-	void CollectCoin(GameObject coin)
-	{
-		coin.Components.Get<CoinComponent>().OnCollect();
-		Score.Score += 1;
 	}
 }

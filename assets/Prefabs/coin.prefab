@@ -3,18 +3,9 @@
     "__guid": "97a3abe4-59a6-4f25-94eb-b789d444d0a1",
     "Flags": 0,
     "Name": "coin",
-    "Tags": "coin",
+    "Tags": "coin,obstacle",
     "Enabled": true,
     "Components": [
-      {
-        "__type": "Sandbox.ModelRenderer",
-        "__guid": "037dd7bc-2f3c-4978-b1e3-42362d73c501",
-        "BodyGroups": 18446744073709551615,
-        "MaterialOverride": "materials/uf-rts/gold.vmat",
-        "Model": "models/protocoin.vmdl",
-        "RenderType": "On",
-        "Tint": "0.97525,0.76069,0,1"
-      },
       {
         "__type": "Sandbox.SphereCollider",
         "__guid": "3c73e193-a9cd-42ee-911d-f67031d653aa",
@@ -26,14 +17,36 @@
       {
         "__type": "CoinComponent",
         "__guid": "87e58556-44d0-4796-b33c-5f076f41da51",
+        "Body": {
+          "_type": "gameobject",
+          "go": "75a680b5-f159-4440-9961-a944d38232f5"
+        },
         "CollectParticle": {
           "_type": "gameobject",
           "prefab": "prefabs/particles/coin_collect.prefab"
         },
-        "RotationSpeed": 5
+        "RotationSpeed": 2
       }
     ],
-    "Children": [],
+    "Children": [
+      {
+        "__guid": "75a680b5-f159-4440-9961-a944d38232f5",
+        "Flags": 0,
+        "Name": "Body",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "037dd7bc-2f3c-4978-b1e3-42362d73c501",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/uf-rts/gold.vmat",
+            "Model": "models/protocoin.vmdl",
+            "RenderType": "On",
+            "Tint": "0.97525,0.76069,0,1"
+          }
+        ]
+      }
+    ],
     "__variables": []
   },
   "ShowInMenu": false,

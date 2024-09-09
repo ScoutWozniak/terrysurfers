@@ -40,6 +40,8 @@ public sealed class PlayerControllerComponent : Component
 
 	float MovementMult = 0.0f;
 
+	Vector3 Velocity { get; set; }
+
 	protected override void OnEnabled()
 	{
 		CalculateJumpHeight();
@@ -50,6 +52,7 @@ public sealed class PlayerControllerComponent : Component
 		if ( MovementMult == 0.0f )
 			return;
 		AnimHelper.WithVelocity( CharController.Velocity / 2 );
+		AnimHelper.WithWishVelocity( Velocity );
 		AnimHelper.IsGrounded = CharController.IsOnGround;
 		AnimHelper.SpecialMove = MoveStyle;
 	}
@@ -64,12 +67,12 @@ public sealed class PlayerControllerComponent : Component
 		if ( Rolling )
 		{
 			CharController.Height = 22;
-			DeathColl.Scale = new Vector3( 48, 48, 23 );
+			DeathColl.Scale = new Vector3( DeathColl.Scale.x, DeathColl.Scale.y, 23 );
 		}
 		else
 		{
 			CharController.Height = 72;
-			DeathColl.Scale = new Vector3( 48, 48, 74 );
+			DeathColl.Scale = new Vector3( DeathColl.Scale.x, DeathColl.Scale.y, 74 );
 		}
 
 
@@ -80,10 +83,9 @@ public sealed class PlayerControllerComponent : Component
 		if ( Input.Down( "Right" ) )
 			dir = -1;
 
-		Vector3 Velocity = new();
 		Vector3 DirVec = (Vector3.Forward + Vector3.Left).Normal;
 
-		Velocity += Vector3.Forward * DirVec.x * 1000.0f * Score.GetSpeedMult() * GameGlobals.SpeedMultiplier;
+		Velocity = Vector3.Forward * DirVec.x * 1000.0f * Score.GetSpeedMult() * GameGlobals.SpeedMultiplier;
 		Velocity += Vector3.Left * DirVec.y * dir * 500.0f;
 
 		CharController.Accelerate( Velocity );

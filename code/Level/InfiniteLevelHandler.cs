@@ -35,7 +35,7 @@ public sealed class InfiniteLevelHandler : Component
 		if (!Player.IsValid() )
 			return;
 
-		if ( Player.Transform.Position.x >= GameGlobals.SegmentLength )
+		if ( Player.Transform.Position.x >= GameGlobals.SegmentLength && GameStateManager.Instance.GameState == GameStates.Playing )
 		{
 			Scene.GetSystem<WorldShiftSystem>().QueueShift = true;
 		}

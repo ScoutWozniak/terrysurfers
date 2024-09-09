@@ -68,7 +68,14 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 	{
 		if ( Target != null )
 		{
-			TargetPosition = Target.Transform.Position + Dir * Distance;
+			var startPos = Target.Transform.Position;
+			var endPos = startPos + Dir * Distance;
+
+			var tr = Scene.Trace.Ray( startPos, endPos ).WithoutTags( "obstacle" ).Run();
+			if ( tr.Hit )
+				TargetPosition = tr.HitPosition;
+			else
+				TargetPosition = endPos;
 
 			Transform.Rotation = Rotation.LookAt( (Target.Transform.Position - Transform.Position).Normal );
 		}

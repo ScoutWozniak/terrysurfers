@@ -1,31 +1,31 @@
 {
   "RootObject": {
-    "Id": "9f2b842a-2ec4-410d-9dce-6c50ef4ba1c2",
+    "__guid": "9f2b842a-2ec4-410d-9dce-6c50ef4ba1c2",
+    "Flags": 0,
     "Name": "boxcarramp",
+    "Tags": "obstacle",
     "Enabled": true,
     "Components": [
       {
-        "__type": "ModelRenderer",
-        "__enabled": true,
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "d38b2eba-f243-47df-8581-e2ae550cc833",
         "BodyGroups": 18446744073709551615,
-        "MaterialGroup": null,
-        "MaterialOverride": null,
         "Model": "models/protoramp.vmdl",
         "RenderType": "On",
         "Tint": "1,1,1,1"
       },
       {
-        "__type": "ModelCollider",
-        "__enabled": true,
+        "__type": "Sandbox.ModelCollider",
+        "__guid": "f17f6178-b6fb-468e-9af9-8c58563ace1a",
         "IsTrigger": false,
         "Model": "models/protoramp.vmdl",
-        "Static": false,
-        "Surface": null
+        "Static": false
       }
     ],
     "Children": [
       {
-        "Id": "3d236346-a191-43f6-8506-95487777eb84",
+        "__guid": "3d236346-a191-43f6-8506-95487777eb84",
+        "Flags": 0,
         "Name": "Object",
         "Position": "15.81973,-0.0000009960122,16.20883",
         "Rotation": "0.00000002565239,0.5096583,-0.00000001368386,0.8603777",
@@ -33,20 +33,22 @@
         "Enabled": true,
         "Components": [
           {
-            "__type": "BoxCollider",
-            "__enabled": true,
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "e3fee039-ed0c-4fd0-9406-4cd983ae5821",
             "Center": "0,0,0",
             "IsTrigger": false,
             "Scale": "75.09998,133.3,136.7",
-            "Static": false,
-            "Surface": null
+            "Static": false
           }
         ]
       }
-    ]
+    ],
+    "__variables": []
   },
   "ShowInMenu": false,
   "MenuPath": null,
   "MenuIcon": null,
-  "__references": []
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
 }

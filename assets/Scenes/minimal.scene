@@ -44,7 +44,7 @@
           "GroundAngle": 69.2,
           "Height": 72,
           "IgnoreLayers": "player,death,coin,trigger",
-          "Radius": 32,
+          "Radius": 15,
           "StepHeight": 18,
           "UseCollisionRules": false
         },
@@ -63,8 +63,8 @@
             "go": "fc190c8f-7300-41c4-96cf-bc386e41949c",
             "component_type": "BoxCollider"
           },
-          "JumpHeight": 72,
-          "JumpTimeToDescent": 0.05,
+          "JumpHeight": 96,
+          "JumpTimeToDescent": 0.25,
           "JumpTimeToPeak": 0.25,
           "RunPartcles": {
             "_type": "component",
@@ -113,7 +113,7 @@
               "__guid": "adc4cb22-3e3b-4909-b71c-75709b9d1073",
               "Center": "0,0,37.5",
               "IsTrigger": true,
-              "Scale": "48,48,74",
+              "Scale": "16,16,74",
               "Static": false
             },
             {
@@ -1365,6 +1365,11 @@
         {
           "__type": "Sandbox.Highlight",
           "__guid": "26d25f0a-d05c-42e6-ad31-0c9a2cbdd7f6"
+        },
+        {
+          "__type": "Sandbox.Pixelate",
+          "__guid": "fa15f5f2-08c8-4106-8045-3aa58d39cabb",
+          "Scale": 0.01
         }
       ]
     },
@@ -1733,6 +1738,16 @@
       "Name": "InitialCamPos",
       "Position": "-405.8661,-22.60365,118.5335",
       "Enabled": true
+    },
+    {
+      "__guid": "831f60d5-4824-4e83-a7cb-093209c0e863",
+      "Flags": 0,
+      "Name": "coin",
+      "Position": "96,0,64",
+      "Tags": "coin,obstacle",
+      "Enabled": true,
+      "__Prefab": "prefabs/coin.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
