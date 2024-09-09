@@ -15,8 +15,16 @@
         "Tint": "1,1,1,1"
       },
       {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "e15d714e-3291-4673-9e38-df39ad3af1f3",
+        "Center": "0,0,103.3",
+        "IsTrigger": false,
+        "Scale": "192,119.6,30",
+        "Static": false
+      },
+      {
         "__type": "Sandbox.ModelCollider",
-        "__guid": "d637d9db-865c-49ea-8233-bd0887badb72",
+        "__guid": "867268df-adf1-4ed9-957d-5e2952de08a8",
         "IsTrigger": false,
         "Model": "models/protobox.vmdl",
         "Static": false

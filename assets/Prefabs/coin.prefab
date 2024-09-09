@@ -39,10 +39,9 @@
             "__type": "Sandbox.ModelRenderer",
             "__guid": "037dd7bc-2f3c-4978-b1e3-42362d73c501",
             "BodyGroups": 18446744073709551615,
-            "MaterialOverride": "materials/uf-rts/gold.vmat",
-            "Model": "models/protocoin.vmdl",
+            "Model": "models/remake/coin/coin_remake.vmdl",
             "RenderType": "On",
-            "Tint": "0.97525,0.76069,0,1"
+            "Tint": "1,0.9,0,1"
           }
         ]
       }
@@ -53,8 +52,6 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__references": [
-    "titanovsky.ufrts_resource_gold1"
-  ],
+  "__references": [],
   "__version": 1
 }

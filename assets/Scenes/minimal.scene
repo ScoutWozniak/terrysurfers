@@ -63,7 +63,7 @@
             "go": "fc190c8f-7300-41c4-96cf-bc386e41949c",
             "component_type": "BoxCollider"
           },
-          "JumpHeight": 96,
+          "JumpHeight": 90,
           "JumpTimeToDescent": 0.25,
           "JumpTimeToPeak": 0.25,
           "RunPartcles": {
@@ -1296,12 +1296,12 @@
           "__type": "Sandbox.Tonemapping",
           "__guid": "e76e7213-3653-4cce-905f-0fa3821afed3",
           "__version": 1,
-          "ExposureBias": 2.92,
+          "ExposureBias": 2.81,
           "ExposureCompensation": 0.32,
           "ExposureMethod": "RGB",
           "MaximumExposure": 1.33,
           "MinimumExposure": 0.91,
-          "Mode": "ACES",
+          "Mode": "Legacy",
           "Rate": 10
         },
         {
@@ -1348,11 +1348,10 @@
         {
           "__type": "Sandbox.ColorAdjustments",
           "__guid": "1e0dd9db-d84d-415c-aa43-e71c1ac9aa1c",
-          "__enabled": false,
           "Brightness": 1.25,
           "Contrast": 1.11,
           "HueRotate": 0,
-          "Saturation": 1.3
+          "Saturation": 1.08
         },
         {
           "__type": "Sandbox.AmbientOcclusion",
@@ -1504,6 +1503,10 @@
                 {
                   "_type": "gameobject",
                   "prefab": "prefabs/segments/dev_segment_03.prefab"
+                },
+                {
+                  "_type": "gameobject",
+                  "prefab": "prefabs/segments/dev_segment_04.prefab"
                 }
               ]
             }
@@ -1616,13 +1619,13 @@
               },
               "DelayBetweenUpdates": 0.1,
               "Feathering": 0.02,
-              "FrameInterval": 5,
+              "FrameInterval": 16,
               "MaxDistance": 512,
-              "MultiBounce": false,
+              "MultiBounce": true,
               "Projection": "Sphere",
               "RenderDynamically": true,
               "TintColor": "1,1,1,1",
-              "UpdateStrategy": "OnEnabled",
+              "UpdateStrategy": "FrameInterval",
               "ZFar": 4096,
               "ZNear": 16
             }
@@ -1716,7 +1719,7 @@
         {
           "__type": "ScoreComp",
           "__guid": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
-          "MaxSpeedDistance": 100000,
+          "MaxSpeedDistance": 10000,
           "SpeedDistScale": {
             "rangey": "1,2",
             "frames": [
@@ -1747,7 +1750,47 @@
       "__guid": "831f60d5-4824-4e83-a7cb-093209c0e863",
       "Flags": 0,
       "Name": "coin",
-      "Position": "96,0,64",
+      "Position": "324,0,64",
+      "Tags": "coin,obstacle",
+      "Enabled": true,
+      "__Prefab": "prefabs/coin.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "c9432b21-3878-41ed-ba93-fa0407b95d21",
+      "Flags": 0,
+      "Name": "coin (1)",
+      "Position": "372,0,64",
+      "Tags": "coin,obstacle",
+      "Enabled": true,
+      "__Prefab": "prefabs/coin.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "99c0b037-73da-446f-9105-659e55e33261",
+      "Flags": 0,
+      "Name": "coin (2)",
+      "Position": "416,0,64",
+      "Tags": "coin,obstacle",
+      "Enabled": true,
+      "__Prefab": "prefabs/coin.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "7cb0207d-bcd0-41c7-ae19-fb8b538324a0",
+      "Flags": 0,
+      "Name": "coin (3)",
+      "Position": "464,0,64",
+      "Tags": "coin,obstacle",
+      "Enabled": true,
+      "__Prefab": "prefabs/coin.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "0aef73bd-496f-4c17-b889-da1017137cc6",
+      "Flags": 0,
+      "Name": "coin (4)",
+      "Position": "516,0,64",
       "Tags": "coin,obstacle",
       "Enabled": true,
       "__Prefab": "prefabs/coin.prefab",

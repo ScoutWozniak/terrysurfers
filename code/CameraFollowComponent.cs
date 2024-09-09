@@ -25,7 +25,6 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 
 	public void OnGameEvent( OnStateChangedEvent eventArgs )
 	{
-		Log.Info( "test" );
 		if (eventArgs.toState == GameStates.Playing)
 		{
 			CameraMode = CameraModes.FollowPlayer;

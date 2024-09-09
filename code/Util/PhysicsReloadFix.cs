@@ -13,6 +13,7 @@ public sealed class PhysicsReloadFix : Component
 	async Task EnableAfterFrame()
 	{
 		await Task.FixedUpdate();
+		Rb.Velocity = Vector3.Zero;
 		Rb.Enabled = true;
 	}
 }

@@ -13,7 +13,7 @@ public sealed class GameStateManager : Component
 {
 	private GameStates gameState = GameStates.Menu;
 
-	[Property] public GameStates GameState { get => gameState; set { Scene.Dispatch( new OnStateChangedEvent( value, gameState ) ); gameState = value; } }
+	[Property] public GameStates GameState { get => gameState; set { Log.Info( "test" ); Scene.Dispatch( new OnStateChangedEvent( value, gameState ) ); gameState = value; } }
 
 	public static GameStateManager Instance { get; private set; }
 

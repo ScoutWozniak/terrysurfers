@@ -37,14 +37,6 @@
         "StartAsleep": false
       },
       {
-        "__type": "Sandbox.BoxCollider",
-        "__guid": "c890e05a-912c-42e9-a7f9-3d971164a7b0",
-        "Center": "0,0,16",
-        "IsTrigger": true,
-        "Scale": "34,34,34",
-        "Static": false
-      },
-      {
         "__type": "PhysicsReloadFix",
         "__guid": "b3cf0e5f-c0ba-4f16-9117-e35932d33f17"
       }
