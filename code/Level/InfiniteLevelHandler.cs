@@ -1,4 +1,5 @@
 using Sandbox;
+using Sandbox.Events;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -54,7 +55,7 @@ public sealed class InfiniteLevelHandler : Component
 			AddSegment();
 		}
 
-		
+		Scene.Dispatch( new OnLevelShift( GameGlobals.SegmentLength ) );
 		foreach ( var obj in Segments )
 		{
 			foreach( var segment in obj.Components.GetAll<LevelSegment>( FindMode.EnabledInSelfAndDescendants ))

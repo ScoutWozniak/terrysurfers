@@ -16,7 +16,6 @@ public sealed class PlayerControllerComponent : Component
 
 	[Property] CitizenAnimationHelper AnimHelper { get; set; }
 
-	[Property] LevelComponent Level { get; set; }
 
 	[Property] public BoxCollider DeathColl { get; set; }
 
@@ -26,8 +25,6 @@ public sealed class PlayerControllerComponent : Component
 
 	bool Rolling = false;
 	bool Moving = false;
-
-	float DuckValue = 0.0f;
 
 	float JumpVelocity { get; set; }
 	float JumpGravity { get; set; }
@@ -88,13 +85,10 @@ public sealed class PlayerControllerComponent : Component
 		// Side to side movement
 
 		if (Input.Pressed("Left"))
-		{
 			QueueMovement( 1 );
-		}
+
 		if (Input.Pressed("Right"))
-		{
 			QueueMovement( -1 );
-		}
 
 		CharController.Accelerate( Vector3.Forward * 500.0f * Score.GetSpeedMult() * GameGlobals.SpeedMultiplier );
 		CharController.Velocity = CharController.Velocity.WithY( SideMoveVel );
@@ -138,11 +132,6 @@ public sealed class PlayerControllerComponent : Component
 		{
 			_ = Duck();
 		}
-
-		/*		if ( Transform.Position.x > 576 )
-				{
-					WrapX();
-				}*/
 
 		RunPartcles.Enabled = CharController.IsOnGround;
 

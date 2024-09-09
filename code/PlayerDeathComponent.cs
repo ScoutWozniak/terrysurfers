@@ -12,26 +12,22 @@ public sealed class PlayerTriggerComponent : Component, Component.ITriggerListen
 	public void OnTriggerEnter( Collider other )
 	{
 		if ( other.Tags.Has( "death" ) )
-		{
 			OnDeath();
-		}
-		else if ( other.Tags.Has( "coin" ) ) {  
+		else if ( other.Tags.Has( "coin" ) ) 
 			CollectCoin( other.GameObject );
-		}
+		
 	}
 
 
 	void OnDeath()
 	{
-		//var ragdoll = RagdollPrefab.Clone( Transform.Position );
 		Ragdoll.Enabled = true;
 		var player = GameObject.Parent.Components.Get<PlayerControllerComponent>();
 		player.Destroy();
-		//ragdoll.Enabled = true;
-		//ragdoll.Components.Get<ModelPhysics>().Renderer = GameObject.Parent.Components.Get<SkinnedModelRenderer>(FindMode.EverythingInSelfAndChildren);
 		Score.StopScore();
 		DeathUi.GameObject.Enabled = true;
 		Sound.Play( "death.yell", Transform.Position );
+		Scene.Components.Get<GameStateManager>( FindMode.InDescendants ).GameState = GameStates.GameOver;
 	}
 
 	void CollectCoin(GameObject coin)
