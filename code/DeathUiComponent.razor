@@ -29,7 +29,7 @@
 	[Property] public string MyStringValue { get; set; } = "Hello World!";
 	[Property] public ScoreComp Score { get; set; }
 
-	[Property] SceneFile HACK { get; set;}
+	[Property] SceneFile CurrentScene { get; set;}
 
 	Sandbox.Services.Leaderboards.Entry[] runEntries;
 	Sandbox.Services.Leaderboards.Entry[] coinEntries;
@@ -75,6 +75,6 @@
 
 	void RestartScene()
 	{
-		Game.ActiveScene.Load(HACK);
+		Game.ActiveScene.Load(CurrentScene);
 	}
 }

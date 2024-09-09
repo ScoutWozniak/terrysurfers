@@ -1,5 +1,5 @@
 {
-  "__guid": "0f17c3f5-f64a-434e-aa46-7a4537b6131a",
+  "__guid": "6c102c57-8f50-48d8-bc2d-5292cabb6e2d",
   "GameObjects": [
     {
       "__guid": "0fded47c-df6e-4010-a37d-e7637090c986",
@@ -118,7 +118,7 @@
             },
             {
               "__type": "PlayerTriggerComponent",
-              "__guid": "89134fc3-f2f8-496c-baba-acd9de9fda9f",
+              "__guid": "ce2fc58e-37be-447a-86a6-5027ed2cc79e",
               "DeathUi": {
                 "_type": "component",
                 "component_id": "5d3dd2c0-2a7b-413d-887c-77f2ae40cdc9",
@@ -1453,7 +1453,7 @@
         {
           "__type": "DeathUiComponent",
           "__guid": "5d3dd2c0-2a7b-413d-887c-77f2ae40cdc9",
-          "HACK": "scenes/minimal.scene",
+          "CurrentScene": "scenes/minimal.scene",
           "MyStringValue": "Hello World!",
           "Score": {
             "_type": "component",
@@ -1481,6 +1481,10 @@
             {
               "_type": "gameobject",
               "prefab": "prefabs/segments/obstacles/obstacles01.prefab"
+            },
+            {
+              "_type": "gameobject",
+              "prefab": "prefabs/segments/obstacles/obstacles02.prefab"
             }
           ],
           "Segments": [
@@ -1774,8 +1778,6 @@
   "Title": "minimal",
   "Description": "",
   "ResourceVersion": 1,
-  "__references": [
-    "droppod.ringworld"
-  ],
+  "__references": [],
   "__version": 1
 }

@@ -54,10 +54,10 @@
         "__PrefabVariables": {}
       },
       {
-        "__guid": "3d2ed71e-3af2-4db0-a141-18abebea955e",
+        "__guid": "16ced735-1470-4544-be7e-236e73169f2a",
         "Flags": 0,
-        "Name": "boxcarramp",
-        "Position": "880,-128,0",
+        "Name": "boxcarramp (2)",
+        "Position": "888,-128,0.00003009193",
         "Tags": "obstacle",
         "Enabled": true,
         "__Prefab": "prefabs/boxcarramp.prefab",
@@ -74,6 +74,16 @@
         "__PrefabVariables": {}
       },
       {
+        "__guid": "4bd15aa5-55d0-4a57-a5b7-81aece6d53f1",
+        "Flags": 0,
+        "Name": "boxcar01 (5)",
+        "Position": "1072,128,0.00001525879",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
         "__guid": "75b324b3-e811-4964-be07-68f38d267a9e",
         "Flags": 0,
         "Name": "underobstacle",
@@ -82,6 +92,60 @@
         "Tags": "obstacle",
         "Enabled": true,
         "__Prefab": "prefabs/underobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "1e2394a2-65b4-4321-98c8-af6ec7fa394e",
+        "Flags": 0,
+        "Name": "BoxObstacle",
+        "Position": "348,88,-0.00003234008",
+        "Tags": "death",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "ca707aff-ea94-4be7-834f-d4c2e86eb810",
+        "Flags": 0,
+        "Name": "BoxObstacle (1)",
+        "Position": "348,128,-0.00003234008",
+        "Rotation": "0,0,0.1238754,0.9922978",
+        "Tags": "death",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "dc3a410e-2566-4965-91f4-da81440d9c0a",
+        "Flags": 0,
+        "Name": "BoxObstacle (2)",
+        "Position": "348,172,-0.00003234008",
+        "Rotation": "0,0,-0.1305262,0.9914449",
+        "Tags": "death",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "864b9260-2fc5-46d8-be3a-c9f23e1bdca9",
+        "Flags": 0,
+        "Name": "BoxObstacle (3)",
+        "Position": "348,152,48",
+        "Rotation": "0,0,-0.1305262,0.9914449",
+        "Tags": "death",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "ead3faef-7366-47e8-a7fa-6f0b35b648c7",
+        "Flags": 0,
+        "Name": "BoxObstacle (4)",
+        "Position": "348,112,40",
+        "Rotation": "0,0,0.1305262,0.9914449",
+        "Tags": "death",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxobstacle.prefab",
         "__PrefabVariables": {}
       }
     ],

@@ -1,0 +1,63 @@
+{
+  "RootObject": {
+    "__guid": "6fcb6552-a9d0-4aad-bf2f-1706f92198bc",
+    "Flags": 0,
+    "Name": "boxobstacle",
+    "Tags": "death",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "0fe6698f-12d6-44df-8608-6c37fa5e6aa7",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/sbox_props/wooden_crate/wooden_crate.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "Sandbox.ModelCollider",
+        "__guid": "92f4ba95-437b-4c6f-a38a-2104d491827b",
+        "IsTrigger": false,
+        "Model": "models/sbox_props/wooden_crate/wooden_crate.vmdl",
+        "Static": false
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "d49f2f99-6ef0-4c1c-a99b-3c4920b67edd",
+        "__enabled": false,
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 5,
+        "MotionEnabled": true,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "c890e05a-912c-42e9-a7f9-3d971164a7b0",
+        "Center": "0,0,16",
+        "IsTrigger": true,
+        "Scale": "34,34,34",
+        "Static": false
+      },
+      {
+        "__type": "PhysicsReloadFix",
+        "__guid": "b3cf0e5f-c0ba-4f16-9117-e35932d33f17"
+      }
+    ],
+    "Children": [],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [
+    "facepunch.wooden_crate"
+  ],
+  "__version": 1
+}

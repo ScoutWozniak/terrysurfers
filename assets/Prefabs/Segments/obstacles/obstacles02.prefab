@@ -1,0 +1,137 @@
+{
+  "RootObject": {
+    "__guid": "93b0531b-a79b-4041-ae93-c2294c9427db",
+    "Flags": 0,
+    "Name": "obstacles02",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "LevelSegment",
+        "__guid": "e1e8589c-81e8-46e5-b74d-a6fd96df967d",
+        "IsObstacles": true,
+        "Width": 1728
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "4106ba57-91e2-4ed8-ab10-f0cc152bc93b",
+        "Flags": 0,
+        "Name": "boxcar01 (4)",
+        "Position": "288,128,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "66c522f4-16d6-4a5e-a960-9811242d0195",
+        "Flags": 0,
+        "Name": "boxcar01 (2)",
+        "Position": "480,-8,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "17065a38-090a-4f87-aa6e-e920a852ac19",
+        "Flags": 0,
+        "Name": "smallobstacle",
+        "Position": "200,0,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/smallobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "f069260f-124b-4276-8dfd-209e57fb3d72",
+        "Flags": 0,
+        "Name": "smallobstacle (1)",
+        "Position": "1560,-4,-0.00005657655",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/smallobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "16ced735-1470-4544-be7e-236e73169f2a",
+        "Flags": 0,
+        "Name": "boxcarramp (2)",
+        "Position": "812,0,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcarramp.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "2f598afa-d22b-4efc-946c-227b9995bcb3",
+        "Flags": 0,
+        "Name": "boxcar01 (3)",
+        "Position": "1176,128,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "c4d983d6-c849-400c-9832-3824220e827f",
+        "Flags": 0,
+        "Name": "boxcar01 (6)",
+        "Position": "1380,128,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "7958aefd-eec7-4624-af40-9a51f7deb5d8",
+        "Flags": 0,
+        "Name": "boxcar01 (1)",
+        "Position": "1176,0,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "4bd15aa5-55d0-4a57-a5b7-81aece6d53f1",
+        "Flags": 0,
+        "Name": "boxcar01 (5)",
+        "Position": "1004,0,0",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/boxcar01.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "75b324b3-e811-4964-be07-68f38d267a9e",
+        "Flags": 0,
+        "Name": "underobstacle",
+        "Position": "848,-128,0",
+        "Rotation": "0,0,1,0.0000001947072",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/underobstacle.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "619fe931-10c2-4a8e-bf8a-e9439bfdd0d2",
+        "Flags": 0,
+        "Name": "underobstacle (1)",
+        "Position": "1548,-120,0",
+        "Rotation": "0,0,1,0.0000001947072",
+        "Tags": "obstacle",
+        "Enabled": true,
+        "__Prefab": "prefabs/underobstacle.prefab",
+        "__PrefabVariables": {}
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

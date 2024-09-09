@@ -14,13 +14,13 @@ public sealed class LevelSegment : Component
 	protected override void DrawGizmos()
 	{
 		base.DrawGizmos();
-		if ( !IsObstacles || Scene.Root != GameObject )
+		if ( !IsObstacles )
 			return;
 
 		var model = Model.Load( "models/dev_segment_outline.vmdl" );
 		for ( int i = 0; i < (int)Width/576.0f; i++ )
 		{
-			Gizmo.Draw.Model( model, new Transform(Vector3.Forward * i * 576) );
+			Gizmo.Draw.Model( model, new Transform(Vector3.Forward * i * 576 + Vector3.Down) );
 		}
 	}
 }
