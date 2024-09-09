@@ -73,7 +73,7 @@
         "projectName": "libevents",
         "projectPath": "d:\\Games\\S&BOX\\terrysurfers\\Libraries\\facepunch.libevents\\Code\\libevents.csproj",
         "packagesPath": "C:\\Users\\harry\\.nuget\\packages\\",
-        "outputPath": "D:\\games\\s&box\\terrysurfers\\Libraries\\facepunch.libevents\\Code\\obj\\",
+        "outputPath": "d:\\Games\\S&BOX\\terrysurfers\\Libraries\\facepunch.libevents\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\harry\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

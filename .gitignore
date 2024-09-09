@@ -16,3 +16,6 @@ code/Properties/*
 *.*_c
 *.los
 *.vpk
+/editor/obj
+/Libraries/facepunch.libevents/Code/obj
+/editor/obj
