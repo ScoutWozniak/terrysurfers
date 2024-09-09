@@ -79,6 +79,5 @@ public sealed class InfiniteLevelHandler : Component
 		newScenery.Transform.World = go.Transform.World;
 
 		Segments = Segments.Append( go ).ToList();
-
 	}
 }

@@ -1,0 +1,135 @@
+{
+  "RootObject": {
+    "__guid": "8fdd5d6c-480a-4f47-955a-45c1e846bf8f",
+    "Flags": 0,
+    "Name": "dev_segment_04",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "LevelSegment",
+        "__guid": "12858f39-a395-4822-ad2f-fcd040b5a88a",
+        "IsObstacles": false,
+        "Width": 1728
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "ec1e916c-9dc1-467d-be7b-bfe7394003ab",
+        "Flags": 0,
+        "Name": "dev_base",
+        "Position": "288,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "ff3741a6-5b02-4d1d-897e-874632f27249",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "b1e995be-83aa-45ba-aa38-706938bea86a",
+            "IsTrigger": false,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "31dba2a3-9498-4ad6-bfbf-718a95e0d4f4",
+        "Flags": 0,
+        "Name": "dev_base (1)",
+        "Position": "864,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "54639596-3848-40ef-9dbf-b86dce946841",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "37830e6e-5ebb-4483-81fc-5520c157b2fa",
+            "IsTrigger": false,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "0eaab1ea-0a58-470d-844c-ae7174b463d2",
+        "Flags": 0,
+        "Name": "dev_base (2)",
+        "Position": "1440,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "35719276-50cd-4857-b5e6-76162edbba99",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "f8ee0f8a-bf84-4662-a64d-923c3d1fad7b",
+            "IsTrigger": false,
+            "Model": "models/infinite/dev/dev_base.vmdl",
+            "Static": false
+          }
+        ]
+      },
+      {
+        "__guid": "b5c9e889-5ff4-40fc-991a-b8151c3f47bc",
+        "Flags": 0,
+        "Name": "Bridge",
+        "Position": "806.1817,62.63881,430.2442",
+        "Rotation": "0,0,0.1305262,0.9914449",
+        "Scale": "11.43184,34.13178,1.714655",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "020c1be2-9638-451e-9d8e-f1459f19c9a9",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "94e90e2b-7930-49f7-add0-e90b3d58f46a",
+        "Flags": 0,
+        "Name": "tree_oak_small_a",
+        "Position": "662.9146,-292.2888,109.5251",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "dddcd22b-de21-41b8-b534-6bb457356332",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [
+    "facepunch.tree_oak_small_a"
+  ],
+  "__version": 1
+}

@@ -24,6 +24,6 @@ public sealed class PlayerTriggerComponent : Component, Component.ITriggerListen
 		Score.StopScore();
 		DeathUi.GameObject.Enabled = true;
 		Sound.Play( "death.yell", Transform.Position );
-		Scene.Components.Get<GameStateManager>( FindMode.InDescendants ).GameState = GameStates.GameOver;
+		GameStateManager.Instance.GameState = GameStates.GameOver;
 	}
 }

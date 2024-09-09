@@ -730,7 +730,7 @@
                                           "__guid": "6d933ff5-e022-4672-90b1-20e61efdc90f",
                                           "Flags": 4,
                                           "Name": "arm_elbow_helper_L",
-                                          "Position": "-0.000004768372,0.000002861023,-0.00006103516",
+                                          "Position": "0,0,0",
                                           "Rotation": "0.0000003075731,0.000000002854507,-0.7577645,0.6525282",
                                           "Enabled": true
                                         }
@@ -964,7 +964,7 @@
                                               "__guid": "dd280c0d-1deb-4ed6-b16f-7454483a46da",
                                               "Flags": 4,
                                               "Name": "arm_elbow_helper_R",
-                                              "Position": "-0.00000667572,0.00003147125,-0.00005340576",
+                                              "Position": "0,0,0",
                                               "Rotation": "0.0000007692941,-0.0000002412072,-0.7577677,0.6525243",
                                               "Enabled": true
                                             }
@@ -1056,7 +1056,7 @@
                           "__guid": "c9f377f4-ab90-4859-bd9a-8d0c4c1c9d11",
                           "Flags": 4,
                           "Name": "leg_knee_helper_R",
-                          "Position": "0.000001907349,0.000004768372,-0.000009536743",
+                          "Position": "0,0,0",
                           "Rotation": "0.000000905889,-0.000001318489,0.7135269,0.7006279",
                           "Enabled": true
                         }
@@ -1073,7 +1073,7 @@
                       "__guid": "09b24ae9-8978-458c-b1a8-4aa9bfb63cc0",
                       "Flags": 4,
                       "Name": "leg_upper_R_twist0",
-                      "Position": "0.000007629395,0.000005960464,-0.00001716614",
+                      "Position": "0,0,0",
                       "Rotation": "-0.00000008940732,-0.000000029802,0.000003069638,1",
                       "Enabled": true
                     },
@@ -1081,7 +1081,7 @@
                       "__guid": "11df0d15-7d79-45be-9742-3ff25d75b00a",
                       "Flags": 4,
                       "Name": "leg_glute_helper_R",
-                      "Position": "-0.000007629395,0,-0.000007629395",
+                      "Position": "0,0,0",
                       "Rotation": "-0.000001221895,-0.0000006515999,-0.7071052,0.7071083",
                       "Enabled": true
                     }
@@ -1139,7 +1139,7 @@
                           "__guid": "7a07d53b-785d-4a94-831a-0eff3c5edc3d",
                           "Flags": 4,
                           "Name": "leg_knee_helper_L",
-                          "Position": "-0.00001525879,0.000001847744,-0.000009536743",
+                          "Position": "0,0,0",
                           "Rotation": "-0.000002973302,-0.000001705918,0.7135277,0.7006271",
                           "Enabled": true
                         }
@@ -1163,7 +1163,7 @@
                       "__guid": "296625e5-1ca8-45c0-87f1-3a8cfaa85a0c",
                       "Flags": 4,
                       "Name": "leg_glute_helper_L",
-                      "Position": "-0.000005722046,0.000001907349,-0.000003814697",
+                      "Position": "0,0,0",
                       "Rotation": "-0.000001102686,-0.0000007682514,-0.7071056,0.707108",
                       "Enabled": true
                     }
@@ -1252,7 +1252,7 @@
           "__guid": "126e2c03-daeb-45dc-8d9b-455eccd29f34",
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
-          "FieldOfView": 45.27,
+          "FieldOfView": 55.31,
           "IsMainCamera": true,
           "Orthographic": false,
           "OrthographicHeight": 1204,
@@ -1774,6 +1774,8 @@
   "Title": "minimal",
   "Description": "",
   "ResourceVersion": 1,
-  "__references": [],
+  "__references": [
+    "droppod.ringworld"
+  ],
   "__version": 1
 }
