@@ -19,7 +19,12 @@
         {
           "__type": "HudComponent",
           "__guid": "ca6d92b4-924d-43d3-acc2-f117eb808ef2",
-          "MyStringValue": "Hello World!",
+          "pUp": {
+            "_type": "component",
+            "component_id": "07d4bada-defb-473a-9448-33c11b8f8715",
+            "go": "6f2947f1-2ac8-40d5-9bbe-90ac4b5bf69e",
+            "component_type": "Powerup"
+          },
           "Score": {
             "_type": "component",
             "component_id": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
@@ -350,6 +355,7 @@
               "BodyGroups": 341,
               "CreateBoneObjects": true,
               "Model": "models/citizen/citizen.vmdl",
+              "Morphs": {},
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": true
@@ -1651,6 +1657,7 @@
           "__type": "Powerup",
           "__guid": "07d4bada-defb-473a-9448-33c11b8f8715",
           "Duration": 4,
+          "HasDuration": true,
           "Name": "Running Boots",
           "OnCollect": {
             "__version": 7,
@@ -1690,6 +1697,7 @@
               "BodyGroups": 18446744073709551615,
               "CreateBoneObjects": false,
               "Model": "models/citizen_clothes/shoes/boxing_boots/models/boxing_boots.vmdl",
+              "Morphs": {},
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": true
@@ -1726,6 +1734,7 @@
           "__type": "Powerup",
           "__guid": "96304fa0-6d0a-44ca-98d6-bfb0b5119049",
           "Duration": 4,
+          "HasDuration": true,
           "Name": "JumpBoots",
           "OnCollect": {
             "__version": 7,
@@ -1765,6 +1774,7 @@
               "BodyGroups": 18446744073709551615,
               "CreateBoneObjects": false,
               "Model": "models/citizen_clothes/shoes/boxing_boots/models/boxing_boots_blue.vmdl",
+              "Morphs": {},
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": true
@@ -1822,8 +1832,39 @@
       "__guid": "c9ba692f-78ee-463f-b0c3-2c10699a2076",
       "Flags": 0,
       "Name": "InitialCamPos",
-      "Position": "-405.8661,-22.60365,118.5335",
-      "Enabled": true
+      "Position": "-337.1137,-74.42791,89.61554",
+      "Rotation": "0,0,0.1305262,0.9914449",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "baeb338f-7bad-4645-96e1-1c6411fd681e",
+          "Flags": 0,
+          "Name": "PREVIEW",
+          "Position": "0,0,0",
+          "Tags": "maincamera",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "60dc8e18-92a3-4b1c-91bd-311dd75d8057",
+              "__enabled": false,
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "IsMainCamera": true,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            }
+          ]
+        }
+      ]
     },
     {
       "__guid": "831f60d5-4824-4e83-a7cb-093209c0e863",
@@ -1874,6 +1915,24 @@
       "Enabled": true,
       "__Prefab": "prefabs/coin.prefab",
       "__PrefabVariables": {}
+    },
+    {
+      "__guid": "9ff8731a-a038-461a-909c-b64cd3f5aadd",
+      "Flags": 0,
+      "Name": "Soundscape",
+      "Position": "1768.498,137.5623,87.82243",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SoundscapeTrigger",
+          "__guid": "78682404-ed4d-4617-bc44-47ac036e14e9",
+          "BoxSize": "50,50,50",
+          "Radius": 500,
+          "Soundscape": "sounds/soundscapes/birdchirp_soundscape.sndscape",
+          "StayActiveOnExit": true,
+          "Type": "Point"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -1900,6 +1959,8 @@
   "Title": "minimal",
   "Description": "",
   "ResourceVersion": 1,
-  "__references": [],
+  "__references": [
+    "droppod.ringworld"
+  ],
   "__version": 1
 }

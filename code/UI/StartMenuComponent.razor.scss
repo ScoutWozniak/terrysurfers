@@ -4,13 +4,22 @@ StartMenuComponent {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	justify-content: center;
-	align-items: center;
 	font-weight: bold;
 	border-radius: 20px;
-	flex-direction: column;
 	gap: 100px 100px;
 	pointer-events: all;
+
+	.container {
+		position: absolute;
+		height: 100%;
+		width: 50%;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
+	}
 
 	.title {
 		font-size: 75px;
@@ -21,19 +30,31 @@ StartMenuComponent {
 	}
 
 	.button {
-		background-color: grey;
-		width: 20%;
+		background-color: orangered;
+		width: 75%;
 		height: 10%;
 		justify-content: center;
 		align-items: center;
 		pointer-events: all;
 		filter: drop-shadow( 0 0 5px rgba( black, 0.5 ) );
 		border-radius: 15px;
-
+		transform: rotate(0) scale(1);
+		transition: 0.3s;
+		
 		.text {
 			font-size: 50px;
-			font-family: Poppins;
+			font-family: 'Pixel Operator';
+			font-weight: bold;
 			color: #fff;
+		}
+	}
+
+	.button:hover {
+		background-color: darkorange;
+		transform: rotate(1deg) scale(1.1);
+
+		.text {
+			filter: drop-shadow(0 0 10px rgba( black, 0.5 ));
 		}
 	}
 }

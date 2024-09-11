@@ -3,8 +3,13 @@
 @inherits PanelComponent
 
 <root>
-	<div class="title">TERRY SURFERS</div>
-	<button onclick=@StartGame><div class="text">Start!</div></button>
+    <div class="container">
+        <Title>TERRY SURFERS</Title>
+        <button onclick=@StartGame><div class="text"><i>play_arrow</i>Start!</div></button>
+        <button onclick=@(() => Game.Overlay.ShowSettingsModal())><div class="text">Settings</div></button>
+        <button onclick=@(() => Game.Close())><div class="text">Exit</div></button>
+    </div>
+	
 </root>
 
 @code

@@ -47,20 +47,15 @@
 	<div class="coin"><img src="/ui/coin.png" /></div>
 	<div class="distanceCard"><div class="score">@(MathF.Round(Score.Distance)) m</div></div>
 
-	<div class="powerUp">
-        <div class="Icon"><i>roller_skating</i></div>
-        <div class="barBg">
-            <div class="barFg"></div>
-        </div>
-    </div>
+	<Powerupbar TrackingPowerup=@pUp></Powerupbar>  
 </root>
 
 @code
 {
 
-	[Property] public string MyStringValue { get; set; } = "Hello World!";
-
 	[Property] public ScoreComp Score { get; set; }
+
+    [Property] Powerup pUp {get; set; }
 
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt

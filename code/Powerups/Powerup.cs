@@ -7,7 +7,8 @@ public sealed class Powerup : Component, Component.ITriggerListener
 
 	[Property] string Name { get; set; }
 
-	[Property] float Duration { get; set; } = 2.0f;
+	[Property] bool HasDuration { get; set; } = true;
+	[Property, ShowIf("HasDuration", true)] float Duration { get; set; } = 2.0f;
 
 	private TimeUntil UntilExpired { get; set; }
 
@@ -16,6 +17,10 @@ public sealed class Powerup : Component, Component.ITriggerListener
 	protected override void OnFixedUpdate()
 	{
 		base.OnFixedUpdate();
+		Log.Info(GetProgress() );
+
+		if ( !HasDuration )
+			return;
 		if ( IsActive )
 		{
 			if ( UntilExpired <= 0 )
@@ -39,8 +44,16 @@ public sealed class Powerup : Component, Component.ITriggerListener
 			{
 				listener.OnPowerupCollected( this );
 			}
+			
 			IsActive = true;
+
 			UntilExpired = Duration;
 		}
+	}
+
+	public float GetProgress()
+	{
+		
+		return ((UntilExpired.Passed - Duration)  / Duration) * -1;
 	}
 }

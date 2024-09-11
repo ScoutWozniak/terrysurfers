@@ -1,0 +1,37 @@
+﻿Powerupbar {
+    width: 20%;
+    height: 8%;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Icon {
+        width: 20%;
+        height: 100%;
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    i {
+        color: white;
+        font-size: 64px;
+    }
+
+    .barBg {
+        width: 75%;
+        height: 75%;
+        background-color: gray;
+        padding: 2%;
+    }
+
+    .barFg {
+        height: 100%;
+        width: 100%;
+        background-color: orange;
+    }
+}
