@@ -9,12 +9,15 @@
     justify-content: center;
 
     .Icon {
-        width: 20%;
-        height: 100%;
+        width: 27%;
+        height: 80%;
         background-color: blue;
         justify-content: center;
         align-items: center;
         display: flex;
+        position:absolute;
+        top:0;
+        left:0;
     }
 
     i {
@@ -23,10 +26,13 @@
     }
 
     .barBg {
-        width: 75%;
-        height: 75%;
+        width: 77%;
+        height: 80%;
         background-color: gray;
         padding: 2%;
+        position:absolute;
+        bottom:0;
+        right:0;
     }
 
     .barFg {

@@ -17,8 +17,6 @@ public sealed class Powerup : Component, Component.ITriggerListener
 	protected override void OnFixedUpdate()
 	{
 		base.OnFixedUpdate();
-		Log.Info(GetProgress() );
-
 		if ( !HasDuration )
 			return;
 		if ( IsActive )
@@ -53,7 +51,6 @@ public sealed class Powerup : Component, Component.ITriggerListener
 
 	public float GetProgress()
 	{
-		
 		return ((UntilExpired.Passed - Duration)  / Duration) * -1;
 	}
 }

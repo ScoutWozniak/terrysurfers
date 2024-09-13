@@ -318,6 +318,12 @@
               "Lighting": true,
               "MotionBlur": false,
               "Opaque": false,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RotationOffset": 0,
               "Scale": 1,
               "Shadows": false,
@@ -355,7 +361,17 @@
               "BodyGroups": 341,
               "CreateBoneObjects": true,
               "Model": "models/citizen/citizen.vmdl",
-              "Morphs": {},
+              "Morphs": {
+                "openjawL": 0,
+                "jawthrust": 0,
+                "browlowererR": 0
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": true
@@ -1355,6 +1371,198 @@
           "__guid": "fa15f5f2-08c8-4106-8045-3aa58d39cabb",
           "Scale": 0.01
         }
+      ],
+      "Children": [
+        {
+          "__guid": "0173837a-a73a-47b0-b0e5-1f2e4e9206d7",
+          "Flags": 0,
+          "Name": "SpeedLines",
+          "Position": "58.49072,-0.00001278092,-0.000007629395",
+          "Rotation": "-0.00000001490116,0,1,0.0000001947072",
+          "Tags": "particles",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ParticleEffect",
+              "__guid": "54758361-aecb-4abd-94d5-cd294c457527",
+              "__version": 1,
+              "Alpha": {
+                "Type": "Curve",
+                "CurveA": [
+                  {
+                    "y": 1
+                  },
+                  {
+                    "x": 0.48029557,
+                    "y": 1,
+                    "in": 1.5365853,
+                    "out": -1.5365853
+                  },
+                  {
+                    "x": 1,
+                    "in": 1.312303,
+                    "out": -1.312303
+                  }
+                ],
+                "Constants": "1,0,0,0"
+              },
+              "ApplyAlpha": true,
+              "ApplyColor": true,
+              "ApplyRotation": false,
+              "ApplyShape": true,
+              "Bounce": {
+                "Constants": "1,0,0,0"
+              },
+              "Brightness": {
+                "Constants": "1,0,0,0"
+              },
+              "Bumpiness": {},
+              "Collision": false,
+              "CollisionRadius": 1,
+              "Damping": {
+                "Constants": "1,0,0,0"
+              },
+              "DieOnCollisionChance": {},
+              "Force": false,
+              "ForceDirection": "0,0,-200",
+              "ForceScale": {
+                "Constants": "1,0,0,0"
+              },
+              "Friction": {
+                "Constants": "1,0,0,0"
+              },
+              "Gradient": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "GradientA": {
+                  "color": [
+                    {
+                      "t": 0.5,
+                      "c": "1,1,1,1"
+                    }
+                  ],
+                  "alpha": []
+                },
+                "GradientB": {
+                  "color": [
+                    {
+                      "t": 0.5,
+                      "c": "1,1,1,1"
+                    }
+                  ],
+                  "alpha": []
+                },
+                "ConstantA": "1,1,1,1",
+                "ConstantB": "0.8,0.8,0.8,1"
+              },
+              "Lifetime": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "Constants": "1,2,0,0"
+              },
+              "MaxParticles": 50,
+              "OrbitalForce": {},
+              "OrbitalPull": {},
+              "PerParticleTimeScale": {
+                "Constants": "1,0.4,0,0"
+              },
+              "Pitch": {},
+              "PreWarm": 0,
+              "PushStrength": {},
+              "Roll": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "Constants": "0,360,0,0"
+              },
+              "Scale": {
+                "Type": "Curve",
+                "CurveA": {
+                  "rangey": "0,3",
+                  "frames": [
+                    {
+                      "in": -9.333329,
+                      "out": 9.333329
+                    },
+                    {
+                      "x": 0.3844417,
+                      "y": 0.77393615,
+                      "in": -0.056075174,
+                      "out": 0.056075174
+                    },
+                    {
+                      "x": 1,
+                      "in": 2.9152544,
+                      "out": -2.9152544
+                    }
+                  ]
+                },
+                "Constants": "1,0,0,0"
+              },
+              "SequenceId": {},
+              "SequenceSpeed": {
+                "Constants": "1,0,0,0"
+              },
+              "SequenceTime": {
+                "Constants": "1,0,0,0"
+              },
+              "SheetSequence": false,
+              "Space": "Local",
+              "StartDelay": {},
+              "StartVelocity": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "Constants": "100,200,0,0"
+              },
+              "Stretch": {},
+              "TimeScale": 1,
+              "Tint": "1,1,1,1",
+              "Yaw": {}
+            },
+            {
+              "__type": "Sandbox.ParticleSpriteRenderer",
+              "__guid": "96d2a51b-9349-4393-b592-0c5e7c223f0b",
+              "Additive": false,
+              "Alignment": "LookAtCamera",
+              "BlurAmount": 0.43,
+              "BlurOpacity": 0.91,
+              "BlurSpacing": 0.73,
+              "DepthFeather": 0,
+              "FaceVelocity": true,
+              "FogStrength": 1,
+              "LeadingTrail": true,
+              "Lighting": false,
+              "MotionBlur": true,
+              "Opaque": false,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RotationOffset": 90,
+              "Scale": 1,
+              "Shadows": false,
+              "SortMode": "Unsorted",
+              "Texture": "materials/particles/shapes/line4.vtex"
+            },
+            {
+              "__type": "Sandbox.ParticleConeEmitter",
+              "__guid": "59a93217-eb23-48e5-b89a-2ee26a2b44a3",
+              "Burst": 0,
+              "ConeAngle": 31.4,
+              "ConeFar": 27.700012,
+              "ConeNear": 17.199963,
+              "Delay": 0,
+              "DestroyOnEnd": false,
+              "Duration": 1,
+              "InVolume": false,
+              "Loop": true,
+              "OnEdge": true,
+              "Rate": 50,
+              "RateOverDistance": 0
+            }
+          ]
+        }
       ]
     },
     {
@@ -1698,6 +1906,12 @@
               "CreateBoneObjects": false,
               "Model": "models/citizen_clothes/shoes/boxing_boots/models/boxing_boots.vmdl",
               "Morphs": {},
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": true
@@ -1775,6 +1989,12 @@
               "CreateBoneObjects": false,
               "Model": "models/citizen_clothes/shoes/boxing_boots/models/boxing_boots_blue.vmdl",
               "Morphs": {},
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": true

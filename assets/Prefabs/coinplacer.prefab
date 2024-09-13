@@ -1,0 +1,22 @@
+{
+  "RootObject": {
+    "__guid": "30eb6fef-718c-4647-9880-ba9fdc3f9307",
+    "Flags": 0,
+    "Name": "coinplacer",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "CoinPlacer",
+        "__guid": "26991eef-ceb7-4104-b812-492868d6c3ac"
+      }
+    ],
+    "Children": [],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
