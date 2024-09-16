@@ -1,5 +1,6 @@
 using Sandbox;
 using Sandbox.Events;
+using System;
 
 public sealed class CameraFollowComponent : Component, IGameEventHandler<OnStateChangedEvent>, IGameEventHandler<OnLevelShift>
 {
@@ -21,6 +22,8 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 
 	[Property] CameraModes CameraMode { get; set; } = CameraModes.GoToObject;
 
+	public Vector3 Offset { get; set; }
+
 	Vector3 TargetPosition { get; set; }
 
 	float TargetFOV = 55.0f;
@@ -36,6 +39,7 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 		else if ( eventArgs.toState == GameStates.GameOver )
 		{
 			CameraMode = CameraModes.TrackObject;
+			TargetFOV = 40.0f;
 		}
 	}
 
@@ -77,9 +81,9 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 
 			var tr = Scene.Trace.Ray( startPos, endPos ).WithoutTags( "obstacle" ).Run();
 			if ( tr.Hit )
-				TargetPosition = tr.HitPosition;
+				TargetPosition = tr.HitPosition + Offset;
 			else
-				TargetPosition = endPos;
+				TargetPosition = endPos + Offset;
 
 			Transform.Rotation = Rotation.LookAt( (Target.Transform.Position - Transform.Position).Normal );
 		}
@@ -87,6 +91,7 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 
 	void TrackObject()
 	{
+		Transform.Position = TargetPosition + Offset;
 		Transform.Rotation = Rotation.LookAt( (PlayerRagdoll.Transform.Position - Transform.Position).Normal );
 	}
 

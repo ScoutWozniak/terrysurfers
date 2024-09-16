@@ -1387,6 +1387,10 @@
             "_type": "gameobject",
             "go": "02fbaa67-bbc9-4708-8000-4ca5fb556c58"
           }
+        },
+        {
+          "__type": "CameraShake",
+          "__guid": "ec3100a3-8783-42ae-b552-bd0251f36a2c"
         }
       ],
       "Children": [
@@ -1958,7 +1962,7 @@
           "__guid": "6201119d-dda4-4c8e-9863-08ab3d8771ba",
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Radius": 32,
+          "Radius": 49.199993,
           "Static": false
         },
         {
