@@ -25,6 +25,12 @@
             "__guid": "ff3741a6-5b02-4d1d-897e-874632f27249",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -49,6 +55,12 @@
             "__guid": "54639596-3848-40ef-9dbf-b86dce946841",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -73,6 +85,12 @@
             "__guid": "35719276-50cd-4857-b5e6-76162edbba99",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -84,6 +102,102 @@
             "Static": false
           }
         ]
+      },
+      {
+        "__guid": "59fc9d79-65e6-4388-bd87-a7bbc332b2b8",
+        "Flags": 0,
+        "Name": "tree_oak_small_a (3)",
+        "Position": "988.5381,522.3738,20.00002",
+        "Rotation": "0,0,0.258819,0.9659258",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "898b6230-c69d-4565-9eb2-692ebc8703aa",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d213cfda-a1b5-4f94-9778-b27357e5c79a",
+        "Flags": 0,
+        "Name": "tree_oak_small_a (2)",
+        "Position": "877.5021,-773.2784,19.99988",
+        "Rotation": "0,0,0.7933533,0.6087615",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "c36905d2-9e4e-436b-9e99-94e2a38504be",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "dcdcd0ae-4976-4764-8aae-6bf8ed04c42a",
+        "Flags": 0,
+        "Name": "tree_oak_small_a (1)",
+        "Position": "1401.653,-677.1227,19.99992",
+        "Rotation": "0,0,0.258819,0.9659258",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "3af85d92-105c-4f12-828f-049b99f7af3c",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "76296292-711b-49ce-a607-61c3e5ef75a1",
+        "Flags": 0,
+        "Name": "tree_oak_small_a",
+        "Position": "387.2087,549.773,19.99999",
+        "Rotation": "0,0,0.258819,0.9659258",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "e75ebce9-3735-41f8-a103-1f224d1dfcb9",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
       }
     ],
     "__variables": []
@@ -92,6 +206,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__references": [],
+  "__references": [
+    "facepunch.tree_oak_small_a"
+  ],
   "__version": 1
 }

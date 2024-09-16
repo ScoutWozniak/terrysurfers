@@ -23,6 +23,10 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 
 	Vector3 TargetPosition { get; set; }
 
+	float TargetFOV = 55.0f;
+
+	[RequireComponent] CameraComponent Cam { get; set; }
+
 	public void OnGameEvent( OnStateChangedEvent eventArgs )
 	{
 		if (eventArgs.toState == GameStates.Playing)
@@ -54,6 +58,7 @@ public sealed class CameraFollowComponent : Component, IGameEventHandler<OnState
 			TrackObject();
 
 		Transform.Position = Transform.Position.LerpTo( TargetPosition, Time.Delta * 10.0f );
+		Cam.FieldOfView = Cam.FieldOfView.LerpTo( TargetFOV, Time.Delta * 10.0f );
 	}
 
 	void GoToObject()

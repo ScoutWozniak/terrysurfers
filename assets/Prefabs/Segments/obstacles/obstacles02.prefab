@@ -114,6 +114,298 @@
         "Enabled": true,
         "__Prefab": "prefabs/underobstacle.prefab",
         "__PrefabVariables": {}
+      },
+      {
+        "__guid": "3553e62a-7f99-4a8d-9a18-3eb56d1eda28",
+        "Flags": 0,
+        "Name": "Laser",
+        "Position": "84.75609,-192,29.93656",
+        "Enabled": true,
+        "Children": [
+          {
+            "__guid": "2f19fa7a-797c-4117-a9f9-dfaa455e1853",
+            "Flags": 0,
+            "Name": "Line",
+            "Position": "0,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.LineRenderer",
+                "__guid": "afa18c05-60bc-45d0-a640-b4126946dafb",
+                "CastShadows": true,
+                "Color": {
+                  "color": [
+                    {
+                      "t": 0.5,
+                      "c": "1,0,0,1"
+                    }
+                  ],
+                  "alpha": []
+                },
+                "EndCap": "Rounded",
+                "Opaque": false,
+                "Points": [
+                  {
+                    "_type": "gameobject",
+                    "go": "5adc76e2-b320-43fb-92b4-be484fc95f76"
+                  },
+                  {
+                    "_type": "gameobject",
+                    "go": "e481e6c2-0350-4afb-b615-dc9841e985ab"
+                  }
+                ],
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "SplineBias": 0,
+                "SplineContinuity": 0,
+                "SplineInterpolation": 0,
+                "SplineTension": 0,
+                "StartCap": "None",
+                "UseVectorPoints": false,
+                "VectorPoints": [],
+                "Width": [
+                  {
+                    "x": 0.5,
+                    "y": 5
+                  }
+                ],
+                "Wireframe": false
+              }
+            ]
+          },
+          {
+            "__guid": "e481e6c2-0350-4afb-b615-dc9841e985ab",
+            "Flags": 0,
+            "Name": "EndPos",
+            "Position": "0,384,-0.000003814697",
+            "Enabled": true,
+            "Children": [
+              {
+                "__guid": "450b6c6e-b024-42cc-8794-74613ab6e8fa",
+                "Flags": 0,
+                "Name": "Spray",
+                "Position": "0,0,0",
+                "Rotation": "-0.09229595,-0.09229595,-0.7010573,0.7010574",
+                "Tags": "particles",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__type": "Sandbox.ParticleEffect",
+                    "__guid": "e28cf1f7-e1bb-4aea-bc55-962bb6492123",
+                    "__version": 1,
+                    "Alpha": {
+                      "Type": "Curve",
+                      "CurveA": [
+                        {
+                          "y": 1
+                        },
+                        {
+                          "x": 0.48029557,
+                          "y": 1,
+                          "in": 1.5365853,
+                          "out": -1.5365853
+                        },
+                        {
+                          "x": 1,
+                          "in": 1.312303,
+                          "out": -1.312303
+                        }
+                      ],
+                      "Constants": "1,0,0,0"
+                    },
+                    "ApplyAlpha": true,
+                    "ApplyColor": true,
+                    "ApplyRotation": false,
+                    "ApplyShape": true,
+                    "Bounce": {
+                      "Constants": "1,0,0,0"
+                    },
+                    "Brightness": {
+                      "Constants": "3,0,0,0"
+                    },
+                    "Bumpiness": {},
+                    "Collision": false,
+                    "CollisionRadius": 1,
+                    "Damping": {},
+                    "DieOnCollisionChance": {},
+                    "Force": true,
+                    "ForceDirection": "0,0,-200",
+                    "ForceScale": {
+                      "Constants": "1,0,0,0"
+                    },
+                    "Friction": {
+                      "Constants": "1,0,0,0"
+                    },
+                    "Gradient": {
+                      "Type": "Range",
+                      "Evaluation": "Particle",
+                      "GradientA": {
+                        "color": [
+                          {
+                            "t": 0.5,
+                            "c": "1,1,1,1"
+                          }
+                        ],
+                        "alpha": []
+                      },
+                      "GradientB": {
+                        "color": [
+                          {
+                            "t": 0.5,
+                            "c": "1,1,1,1"
+                          }
+                        ],
+                        "alpha": []
+                      },
+                      "ConstantA": "0.98515,0,0,1",
+                      "ConstantB": "0.52558,0,0,1"
+                    },
+                    "Lifetime": {
+                      "Type": "Range",
+                      "Evaluation": "Particle",
+                      "Constants": "1,2,0,0"
+                    },
+                    "MaxParticles": 100,
+                    "OrbitalForce": {},
+                    "OrbitalPull": {},
+                    "PerParticleTimeScale": {
+                      "Constants": "1,0.4,0,0"
+                    },
+                    "Pitch": {},
+                    "PreWarm": 0,
+                    "PushStrength": {},
+                    "Roll": {
+                      "Type": "Range",
+                      "Evaluation": "Particle",
+                      "Constants": "0,360,0,0"
+                    },
+                    "Scale": {
+                      "Type": "Curve",
+                      "CurveA": {
+                        "rangey": "0,5",
+                        "frames": [
+                          {
+                            "in": -9.333329,
+                            "out": 9.333329
+                          },
+                          {
+                            "x": 0.03325123,
+                            "y": 1,
+                            "in": -0.056075174,
+                            "out": 0.056075174
+                          },
+                          {
+                            "x": 1,
+                            "in": 2.9152544,
+                            "out": -2.9152544
+                          }
+                        ]
+                      },
+                      "Constants": "1,0,0,0"
+                    },
+                    "SequenceId": {},
+                    "SequenceSpeed": {
+                      "Constants": "1,0,0,0"
+                    },
+                    "SequenceTime": {
+                      "Constants": "1,0,0,0"
+                    },
+                    "SheetSequence": false,
+                    "Space": "World",
+                    "StartDelay": {},
+                    "StartVelocity": {
+                      "Type": "Range",
+                      "Evaluation": "Particle",
+                      "Constants": "100,200,0,0"
+                    },
+                    "Stretch": {},
+                    "TimeScale": 1,
+                    "Tint": "1,1,1,1",
+                    "Yaw": {}
+                  },
+                  {
+                    "__type": "Sandbox.ParticleSpriteRenderer",
+                    "__guid": "17d2ae96-79a4-4760-a0a3-8e9b534f5af2",
+                    "Additive": false,
+                    "Alignment": "LookAtCamera",
+                    "BlurAmount": 0.5,
+                    "BlurOpacity": 0.91,
+                    "BlurSpacing": 0.73,
+                    "DepthFeather": 0,
+                    "FaceVelocity": false,
+                    "FogStrength": 1,
+                    "LeadingTrail": true,
+                    "Lighting": false,
+                    "MotionBlur": false,
+                    "Opaque": false,
+                    "RenderOptions": {
+                      "GameLayer": true,
+                      "OverlayLayer": false,
+                      "BloomLayer": false,
+                      "AfterUILayer": false
+                    },
+                    "RotationOffset": 0,
+                    "Scale": 1,
+                    "Shadows": false,
+                    "SortMode": "Unsorted",
+                    "Texture": "materials/particles/shapes/spark1.vtex"
+                  },
+                  {
+                    "__type": "Sandbox.ParticleConeEmitter",
+                    "__guid": "fb37b0ea-674e-4e17-a724-1a7cc2f61bf4",
+                    "Burst": 0,
+                    "ConeAngle": 31.4,
+                    "ConeFar": 50,
+                    "ConeNear": 1,
+                    "Delay": 0,
+                    "DestroyOnEnd": false,
+                    "Duration": 3,
+                    "InVolume": false,
+                    "Loop": true,
+                    "OnEdge": false,
+                    "Rate": 100,
+                    "RateOverDistance": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "__guid": "5adc76e2-b320-43fb-92b4-be484fc95f76",
+            "Flags": 0,
+            "Name": "StartPos",
+            "Position": "0,-16,0",
+            "Enabled": true
+          },
+          {
+            "__guid": "9da71f41-6301-4e58-8d39-fbdb9b2cd183",
+            "Flags": 0,
+            "Name": "Box",
+            "Position": "0,-8,0",
+            "Scale": "0.4811469,0.4811469,0.4811469",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "a051cbf3-30c6-4f8f-b1bb-d5223a40b664",
+                "BodyGroups": 18446744073709551615,
+                "Model": "models/dev/box.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "0.20465,0.20465,0.20465,1"
+              }
+            ]
+          }
+        ]
       }
     ],
     "__variables": []

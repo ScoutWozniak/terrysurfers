@@ -25,6 +25,12 @@
             "__guid": "094cf500-cb04-46dd-b700-4a265b4ad679",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -49,6 +55,12 @@
             "__guid": "18620729-e14a-45a2-bc66-1a968f2fe22e",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -73,6 +85,12 @@
             "__guid": "ff3741a6-5b02-4d1d-897e-874632f27249",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/train/trainstation_mid.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -98,6 +116,12 @@
             "__guid": "ae62c5b3-ed25-4066-91e8-b75b2dd61e30",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/train/trainstation_side.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -123,6 +147,12 @@
             "__guid": "c2783425-9e24-41b7-b8f8-558ad730eab3",
             "BodyGroups": 18446744073709551615,
             "Model": "models/dev/box.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           }
@@ -230,6 +260,12 @@
                 "__guid": "89e56c7f-fedf-4091-ae9a-b5f2f4d4ff07",
                 "BodyGroups": 18446744073709551615,
                 "Model": "models/sbox_props/benches/old_bench.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
                 "RenderType": "On",
                 "Tint": "1,1,1,1"
               }
@@ -247,6 +283,12 @@
                 "__guid": "1037eff4-1d8a-4ac3-8ffe-dc6f600cd743",
                 "BodyGroups": 18446744073709551615,
                 "Model": "models/sbox_props/benches/old_bench.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
                 "RenderType": "On",
                 "Tint": "1,1,1,1"
               }
@@ -264,6 +306,12 @@
                 "__guid": "1ae7b07d-ab2c-4599-8335-d51d157b32be",
                 "BodyGroups": 18446744073709551615,
                 "Model": "models/sbox_props/benches/old_bench.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
                 "RenderType": "On",
                 "Tint": "1,1,1,1"
               }
@@ -281,10 +329,100 @@
                 "__guid": "3ae00982-76be-412b-b234-7e6dc4866555",
                 "BodyGroups": 18446744073709551615,
                 "Model": "models/sbox_props/benches/old_bench.vmdl",
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
                 "RenderType": "On",
                 "Tint": "1,1,1,1"
               }
             ]
+          }
+        ]
+      },
+      {
+        "__guid": "34352a50-d285-446b-94d3-9b33fdb97ea0",
+        "Flags": 0,
+        "Name": "Probe",
+        "Position": "-76,-0.000004610299,144",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.EnvmapProbe",
+            "__guid": "8118b694-035c-4f10-a8a5-8ea7f81ef77e",
+            "Bounds": {
+              "Mins": "-512,-512,-512",
+              "Maxs": "512,512,512"
+            },
+            "DelayBetweenUpdates": 0.1,
+            "Feathering": 0.25,
+            "FrameInterval": 5,
+            "MaxDistance": 512,
+            "MultiBounce": true,
+            "Projection": "Sphere",
+            "RenderDynamically": true,
+            "TintColor": "1,1,1,1",
+            "UpdateStrategy": "OnEnabled",
+            "ZFar": 4096,
+            "ZNear": 16
+          }
+        ]
+      },
+      {
+        "__guid": "028f6a7b-5422-451c-809b-cf9bb2759fc2",
+        "Flags": 0,
+        "Name": "Probe (1)",
+        "Position": "352,-0.000004610299,144",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.EnvmapProbe",
+            "__guid": "ce64ecd6-3a62-4dab-a9b0-6df0892b3264",
+            "Bounds": {
+              "Mins": "-512,-512,-512",
+              "Maxs": "512,512,512"
+            },
+            "DelayBetweenUpdates": 0.1,
+            "Feathering": 0.25,
+            "FrameInterval": 5,
+            "MaxDistance": 512,
+            "MultiBounce": true,
+            "Projection": "Sphere",
+            "RenderDynamically": true,
+            "TintColor": "1,1,1,1",
+            "UpdateStrategy": "OnEnabled",
+            "ZFar": 4096,
+            "ZNear": 16
+          }
+        ]
+      },
+      {
+        "__guid": "0aa52da0-0596-4f82-96fe-04ad64d10df9",
+        "Flags": 0,
+        "Name": "Probe (2)",
+        "Position": "860,-0.000004610299,144",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.EnvmapProbe",
+            "__guid": "1ac4e1a1-2f16-4995-b5a9-ed27c26e4d02",
+            "Bounds": {
+              "Mins": "-512,-512,-512",
+              "Maxs": "512,512,512"
+            },
+            "DelayBetweenUpdates": 0.1,
+            "Feathering": 0.25,
+            "FrameInterval": 5,
+            "MaxDistance": 512,
+            "MultiBounce": true,
+            "Projection": "Sphere",
+            "RenderDynamically": true,
+            "TintColor": "1,1,1,1",
+            "UpdateStrategy": "OnEnabled",
+            "ZFar": 4096,
+            "ZNear": 16
           }
         ]
       }

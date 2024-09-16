@@ -25,6 +25,12 @@
             "__guid": "ff3741a6-5b02-4d1d-897e-874632f27249",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -49,6 +55,12 @@
             "__guid": "54639596-3848-40ef-9dbf-b86dce946841",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -73,6 +85,12 @@
             "__guid": "35719276-50cd-4857-b5e6-76162edbba99",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -98,23 +116,83 @@
             "__guid": "a3b262ba-a8c6-43fb-9bc6-1244e3848182",
             "BodyGroups": 18446744073709551615,
             "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           }
         ]
       },
       {
-        "__guid": "aa317495-4d41-4c86-9e77-6d610f4beef2",
+        "__guid": "5ee4c6d3-f89f-4914-9784-95a938df623c",
         "Flags": 0,
-        "Name": "tree_oak_small_a (1)",
-        "Position": "334.335,365.808,19.46525",
+        "Name": "facade01",
+        "Position": "478.4868,546.7076,256",
         "Enabled": true,
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
-            "__guid": "be640982-1d94-46e3-92e7-bab636122261",
+            "__guid": "2dfdd084-642c-46ce-b41b-56b81f3f0656",
             "BodyGroups": 18446744073709551615,
-            "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "Model": "models/infinite/dev/facade01.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "a1d49987-443d-4b03-bc96-b5bf38ad9efc",
+        "Flags": 0,
+        "Name": "facade01 (1)",
+        "Position": "1429.498,-687.9622,255.9999",
+        "Rotation": "0,0,0.258819,0.9659258",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "31b581a1-6fc0-4225-87b2-40e0504c225a",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/facade01.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "4436653e-0fc7-4a1f-8b2d-4f2806e062a0",
+        "Flags": 0,
+        "Name": "facade01 (2)",
+        "Position": "611.4846,-1491.414,255.9993",
+        "Scale": "2.334508,2.334508,2.334508",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "447dcd68-c1a5-4713-9e3f-4fa4ed9f4606",
+            "BodyGroups": 18446744073709551615,
+            "Model": "models/infinite/dev/facade01.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           }

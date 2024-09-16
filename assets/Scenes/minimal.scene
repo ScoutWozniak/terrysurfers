@@ -123,7 +123,27 @@
             },
             {
               "__type": "PlayerTriggerComponent",
-              "__guid": "ce2fc58e-37be-447a-86a6-5027ed2cc79e",
+              "__guid": "ddfc8929-4c33-4efe-ab8a-7d3c3194fe56",
+              "DeathTimeScale": [
+                {
+                  "y": 1,
+                  "mode": "Flat"
+                },
+                {
+                  "y": 0.06382979,
+                  "mode": "Stepped"
+                },
+                {
+                  "x": 0.24851191,
+                  "y": 0.09042553,
+                  "in": -1.4509803,
+                  "out": 1.4509803
+                },
+                {
+                  "x": 1,
+                  "y": 1
+                }
+              ],
               "DeathUi": {
                 "_type": "component",
                 "component_id": "5d3dd2c0-2a7b-413d-887c-77f2ae40cdc9",
@@ -361,11 +381,7 @@
               "BodyGroups": 341,
               "CreateBoneObjects": true,
               "Model": "models/citizen/citizen.vmdl",
-              "Morphs": {
-                "openjawL": 0,
-                "jawthrust": 0,
-                "browlowererR": 0
-              },
+              "Morphs": {},
               "RenderOptions": {
                 "GameLayer": true,
                 "OverlayLayer": false,
@@ -1266,25 +1282,6 @@
           "ZNear": 10
         },
         {
-          "__type": "CameraFollowComponent",
-          "__guid": "07706efa-eba4-420c-89af-bb4931d3ca56",
-          "CameraMode": "GoToObject",
-          "Dir": "-1,0,0.25",
-          "Distance": 536.5001,
-          "InitialCamPos": {
-            "_type": "gameobject",
-            "go": "c9ba692f-78ee-463f-b0c3-2c10699a2076"
-          },
-          "PlayerRagdoll": {
-            "_type": "gameobject",
-            "go": "bee0eeb0-1f1e-4415-a77c-a53ea5533a23"
-          },
-          "Target": {
-            "_type": "gameobject",
-            "go": "02fbaa67-bbc9-4708-8000-4ca5fb556c58"
-          }
-        },
-        {
           "__type": "Sandbox.Vignette",
           "__guid": "7b013ef5-6661-443a-9897-6ede43dd0958",
           "Center": "0.5,0.5",
@@ -1297,25 +1294,26 @@
           "__type": "Sandbox.Tonemapping",
           "__guid": "e76e7213-3653-4cce-905f-0fa3821afed3",
           "__version": 1,
-          "ExposureBias": 2.81,
-          "ExposureCompensation": 0.32,
+          "AutoExposureEnabled": true,
+          "ExposureBias": 4.25,
+          "ExposureCompensation": 0,
           "ExposureMethod": "RGB",
-          "MaximumExposure": 1.33,
-          "MinimumExposure": 0.91,
-          "Mode": "Legacy",
-          "Rate": 10
+          "MaximumExposure": 3,
+          "MinimumExposure": 1,
+          "Mode": "HableFilmic",
+          "Rate": 1
         },
         {
           "__type": "Sandbox.CubemapFog",
           "__guid": "3932f2a9-31a1-4e83-a05b-c15f0d58541d",
-          "Blur": 0.5,
+          "Blur": 0.64,
           "EndDistance": 4096,
-          "FalloffExponent": 1,
+          "FalloffExponent": 2.8999987,
           "HeightExponent": 2,
           "HeightStart": 2000,
-          "HeightWidth": 0,
-          "StartDistance": 10,
-          "Tint": "1,1,1,1"
+          "HeightWidth": 2,
+          "StartDistance": 256,
+          "Tint": "0.60742,0.70705,0.93953,1"
         },
         {
           "__type": "Sandbox.Bloom",
@@ -1342,17 +1340,17 @@
             }
           ],
           "Mode": "Additive",
-          "Strength": 1,
-          "Threshold": 0.5,
-          "ThresholdWidth": 0
+          "Strength": 2.79,
+          "Threshold": 0.92,
+          "ThresholdWidth": 0.37
         },
         {
           "__type": "Sandbox.ColorAdjustments",
           "__guid": "1e0dd9db-d84d-415c-aa43-e71c1ac9aa1c",
-          "Brightness": 1.25,
-          "Contrast": 1.11,
+          "Brightness": 1,
+          "Contrast": 1.09,
           "HueRotate": 0,
-          "Saturation": 1.08
+          "Saturation": 1.26
         },
         {
           "__type": "Sandbox.AmbientOcclusion",
@@ -1370,6 +1368,25 @@
           "__type": "Sandbox.Pixelate",
           "__guid": "fa15f5f2-08c8-4106-8045-3aa58d39cabb",
           "Scale": 0.01
+        },
+        {
+          "__type": "CameraFollowComponent",
+          "__guid": "3c35cf26-68f5-41bc-b90a-927a1ec8a4bc",
+          "CameraMode": "GoToObject",
+          "Dir": "-1,0,0.25",
+          "Distance": 536.5001,
+          "InitialCamPos": {
+            "_type": "gameobject",
+            "go": "c9ba692f-78ee-463f-b0c3-2c10699a2076"
+          },
+          "PlayerRagdoll": {
+            "_type": "gameobject",
+            "go": "bee0eeb0-1f1e-4415-a77c-a53ea5533a23"
+          },
+          "Target": {
+            "_type": "gameobject",
+            "go": "02fbaa67-bbc9-4708-8000-4ca5fb556c58"
+          }
         }
       ],
       "Children": [
@@ -2052,8 +2069,8 @@
       "__guid": "c9ba692f-78ee-463f-b0c3-2c10699a2076",
       "Flags": 0,
       "Name": "InitialCamPos",
-      "Position": "-337.1137,-74.42791,89.61554",
-      "Rotation": "0,0,0.1305262,0.9914449",
+      "Position": "-384.3491,-32.21611,86.41759",
+      "Rotation": "-0.04745842,0.1017644,0.1287644,0.9852982",
       "Enabled": true,
       "Children": [
         {

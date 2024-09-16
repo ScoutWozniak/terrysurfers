@@ -25,6 +25,12 @@
             "__guid": "ff3741a6-5b02-4d1d-897e-874632f27249",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -49,6 +55,12 @@
             "__guid": "54639596-3848-40ef-9dbf-b86dce946841",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -73,6 +85,12 @@
             "__guid": "35719276-50cd-4857-b5e6-76162edbba99",
             "BodyGroups": 18446744073709551615,
             "Model": "models/infinite/dev/dev_base.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           },
@@ -89,16 +107,22 @@
         "__guid": "b5c9e889-5ff4-40fc-991a-b8151c3f47bc",
         "Flags": 0,
         "Name": "Bridge",
-        "Position": "806.1817,62.63881,430.2442",
-        "Rotation": "0,0,0.1305262,0.9914449",
-        "Scale": "11.43184,34.13178,1.714655",
+        "Position": "343.1198,-0.0007888927,237.4137",
+        "Rotation": "0,0,-0.1305262,0.9914449",
+        "Scale": "1.751173,1.751173,1.751173",
         "Enabled": true,
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
             "__guid": "020c1be2-9638-451e-9d8e-f1459f19c9a9",
             "BodyGroups": 18446744073709551615,
-            "Model": "models/dev/box.vmdl",
+            "Model": "models/infinite/dev/bridge_decor.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           }
@@ -116,6 +140,12 @@
             "__guid": "dddcd22b-de21-41b8-b534-6bb457356332",
             "BodyGroups": 18446744073709551615,
             "Model": "models/sbox_props/trees/oak/tree_oak_small_a.vmdl",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
             "RenderType": "On",
             "Tint": "1,1,1,1"
           }
