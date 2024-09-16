@@ -7,38 +7,22 @@
     "Enabled": true,
     "Components": [
       {
-        "__type": "Sandbox.ModelRenderer",
-        "__guid": "0fe6698f-12d6-44df-8608-6c37fa5e6aa7",
+        "__type": "PhysicsReloadFix",
+        "__guid": "b3cf0e5f-c0ba-4f16-9117-e35932d33f17"
+      },
+      {
+        "__type": "Sandbox.Prop",
+        "__guid": "6859b191-7edd-42f2-8074-cf806789e25e",
         "BodyGroups": 18446744073709551615,
+        "Health": 50,
+        "IsStatic": false,
         "Model": "models/sbox_props/wooden_crate/wooden_crate.vmdl",
-        "RenderType": "On",
+        "StartAsleep": false,
         "Tint": "1,1,1,1"
       },
       {
-        "__type": "Sandbox.ModelCollider",
-        "__guid": "92f4ba95-437b-4c6f-a38a-2104d491827b",
-        "IsTrigger": false,
-        "Model": "models/sbox_props/wooden_crate/wooden_crate.vmdl",
-        "Static": false
-      },
-      {
-        "__type": "Sandbox.Rigidbody",
-        "__guid": "d49f2f99-6ef0-4c1c-a99b-3c4920b67edd",
-        "__enabled": false,
-        "AngularDamping": 0,
-        "Gravity": true,
-        "LinearDamping": 0,
-        "Locking": {},
-        "MassCenterOverride": "0,0,0",
-        "MassOverride": 5,
-        "MotionEnabled": true,
-        "OverrideMassCenter": false,
-        "RigidbodyFlags": 0,
-        "StartAsleep": false
-      },
-      {
-        "__type": "PhysicsReloadFix",
-        "__guid": "b3cf0e5f-c0ba-4f16-9117-e35932d33f17"
+        "__type": "BoxObstacle",
+        "__guid": "56bccd1d-2e26-48e1-8765-a8d637dc28f9"
       }
     ],
     "Children": [],
@@ -49,7 +33,7 @@
   "MenuIcon": null,
   "ResourceVersion": 1,
   "__references": [
-    "facepunch.wooden_crate"
+    "droppod.ringworld"
   ],
   "__version": 1
 }

@@ -39,6 +39,7 @@
       "Flags": 0,
       "Name": "Terry",
       "Position": "-172,0.00003166468,32",
+      "Tags": "player",
       "Enabled": true,
       "Components": [
         {
@@ -373,6 +374,7 @@
           "Flags": 0,
           "Name": "Body",
           "Position": "0,0,0",
+          "Tags": "player",
           "Enabled": true,
           "Components": [
             {
