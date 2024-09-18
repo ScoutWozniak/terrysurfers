@@ -425,6 +425,66 @@
             "ZNear": 16
           }
         ]
+      },
+      {
+        "__guid": "df1f83d0-3d91-4b85-963a-fb299442e203",
+        "Flags": 0,
+        "Name": "Point Light (2)",
+        "Position": "208,12,156",
+        "Tags": "light_point,light",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.PointLight",
+            "__guid": "ae807b82-8d3e-47d5-aec1-fd4e2c180afe",
+            "Attenuation": 1,
+            "FogMode": "Disabled",
+            "FogStrength": 1,
+            "LightColor": "0.37674,0.2674,0.20852,1",
+            "Radius": 400,
+            "Shadows": false
+          }
+        ]
+      },
+      {
+        "__guid": "b3301b44-20c8-4083-a699-8ec85955b560",
+        "Flags": 0,
+        "Name": "Point Light (1)",
+        "Position": "668,12,156",
+        "Tags": "light_point,light",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.PointLight",
+            "__guid": "eb2a5911-a6ad-4713-8712-d165364653dd",
+            "Attenuation": 1,
+            "FogMode": "Disabled",
+            "FogStrength": 1,
+            "LightColor": "0.37674,0.2674,0.20852,1",
+            "Radius": 400,
+            "Shadows": false
+          }
+        ]
+      },
+      {
+        "__guid": "e4206240-943d-40fa-89bd-9e31fd175140",
+        "Flags": 0,
+        "Name": "Point Light",
+        "Position": "1052,12,156",
+        "Tags": "light_point,light",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.PointLight",
+            "__guid": "37ed7216-d539-44f2-826e-8e34b84ed807",
+            "Attenuation": 1,
+            "FogMode": "Disabled",
+            "FogStrength": 1,
+            "LightColor": "0.37674,0.2674,0.20852,1",
+            "Radius": 400,
+            "Shadows": false
+          }
+        ]
       }
     ],
     "__variables": []
@@ -434,6 +494,7 @@
   "MenuIcon": null,
   "ResourceVersion": 1,
   "__references": [
+    "droppod.ringworld",
     "facepunch.old_bench"
   ],
   "__version": 1

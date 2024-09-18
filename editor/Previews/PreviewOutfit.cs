@@ -52,6 +52,7 @@ class OutfitPreview : AssetPreview
 		if ( PrimarySceneObject is SceneModel sm )
 		{
 			sm.Update( timeStep  );
+			sm.ColorTint = new( 1, 1, 1, 0 );
 			foreach( var clothe in sceneClothes )
 			{
 				clothe.MergeBones( PrimarySceneObject as SceneModel );

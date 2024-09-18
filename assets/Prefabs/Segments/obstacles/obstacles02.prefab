@@ -143,6 +143,7 @@
                   "alpha": []
                 },
                 "EndCap": "Rounded",
+                "Face": "Camera",
                 "Opaque": false,
                 "Points": [
                   {
@@ -225,7 +226,7 @@
                       "Constants": "1,0,0,0"
                     },
                     "Brightness": {
-                      "Constants": "3,0,0,0"
+                      "Constants": "16.6,0,0,0"
                     },
                     "Bumpiness": {},
                     "Collision": false,
@@ -315,7 +316,7 @@
                       "Constants": "1,0,0,0"
                     },
                     "SheetSequence": false,
-                    "Space": "World",
+                    "Space": "Local",
                     "StartDelay": {},
                     "StartVelocity": {
                       "Type": "Range",
@@ -404,6 +405,25 @@
                 "Tint": "0.20465,0.20465,0.20465,1"
               }
             ]
+          },
+          {
+            "__guid": "ee33d7be-562a-4531-ae4f-aa32bb061b57",
+            "Flags": 0,
+            "Name": "Collider",
+            "Position": "0,192,0",
+            "Tags": "death,gib",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.CapsuleCollider",
+                "__guid": "122c2afd-f7cf-4030-9760-11864c347671",
+                "End": "0,-196,0",
+                "IsTrigger": true,
+                "Radius": 5,
+                "Start": "0,196,0",
+                "Static": false
+              }
+            ]
           }
         ]
       }
@@ -414,6 +434,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "ResourceVersion": 1,
-  "__references": [],
+  "__references": [
+    "droppod.ringworld"
+  ],
   "__version": 1
 }

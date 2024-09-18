@@ -5,5 +5,5 @@ Layer0
 	shader "shaders/sky.shader"
 
 	//---- Texture ----
-	SkyTexture "materials/skies/pan_grassland_lg.png"
+	SkyTexture "materials/skies/NightSkyHDRI008_4K-HDR.exr"
 }

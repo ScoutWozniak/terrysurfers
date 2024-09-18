@@ -17,7 +17,7 @@ public sealed class ScoreComp : Component
 		base.OnUpdate();
 		if (!Dead )
 		{
-			Distance += 100 * GetSpeedMult() * Time.Delta;
+			Distance += 2 * GetSpeedMult() * Time.Delta;
 		}
 	}
 

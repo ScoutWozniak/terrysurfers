@@ -11,18 +11,43 @@
         "__guid": "b3cf0e5f-c0ba-4f16-9117-e35932d33f17"
       },
       {
-        "__type": "Sandbox.Prop",
-        "__guid": "6859b191-7edd-42f2-8074-cf806789e25e",
+        "__type": "BoxObstacle",
+        "__guid": "56bccd1d-2e26-48e1-8765-a8d637dc28f9"
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "c8e95aba-fcfa-4bef-a3ec-b71335d5835d",
         "BodyGroups": 18446744073709551615,
-        "Health": 50,
-        "IsStatic": false,
         "Model": "models/sbox_props/wooden_crate/wooden_crate.vmdl",
-        "StartAsleep": false,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
         "Tint": "1,1,1,1"
       },
       {
-        "__type": "BoxObstacle",
-        "__guid": "56bccd1d-2e26-48e1-8765-a8d637dc28f9"
+        "__type": "Sandbox.ModelCollider",
+        "__guid": "c89392c0-9e6d-474d-bb9b-04211be424de",
+        "IsTrigger": false,
+        "Model": "models/sbox_props/wooden_crate/wooden_crate.vmdl",
+        "Static": false
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "8d2723b1-a18d-4b8e-9846-27c654b6ca7e",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 0,
+        "MotionEnabled": true,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
       }
     ],
     "Children": [],

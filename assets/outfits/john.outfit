@@ -1,0 +1,11 @@
+{
+  "Name": "John Rings",
+  "CoinsNeeded": 200,
+  "Clothing": [
+    "models/citizen_clothes/full_outfit/scifi_trooper_armour/scifi_trooper_armour.clothing",
+    "models/citizen_clothes/hat/scifi_trooper_helmet/scifi_trooper_helmet.clothing",
+    "models/citizen_clothes/skin04.clothing"
+  ],
+  "__references": [],
+  "__version": 0
+}

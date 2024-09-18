@@ -3,8 +3,8 @@
 @inherits PanelComponent
 
 <root>
-	<div class="title">You fucked up</div>
-	<div class="text">You ran @Score.Distance m</div>
+	<title>You fucked up!!</title>
+	<div class="text">You ran @((int)Score.Distance) m</div>
 	<div class="text">You collected @Score.Score coins</div>
 	<button onclick=@RestartScene><div class="text">Restart</div></button>
 
@@ -44,8 +44,8 @@
 		base.OnEnabled();
 		if (Score != null)
 		{
-			Sandbox.Services.Stats.SetValue("highscore-coins", Score.Score);
-			Sandbox.Services.Stats.SetValue("distanceran", Score.Distance);
+			Sandbox.Services.Stats.SetValue("highscore-coins", (int)Score.Score);
+            Sandbox.Services.Stats.SetValue("v2-distance-ran", (int)Score.Distance);
 		}
 		GetRunLeaderBoard();
 		GetCoinLeaderBoard();
@@ -53,7 +53,7 @@
 
 	void GetRunLeaderBoard()
 	{
-		var board = Sandbox.Services.Leaderboards.Get("distanceran");
+        var board = Sandbox.Services.Leaderboards.Get("v2-distance-ran");
 
 		board.MaxEntries = 5;
 		board.Group = "global";

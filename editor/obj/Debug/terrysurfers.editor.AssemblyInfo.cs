@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("terrysurfers.editor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1ed3904e3631717abe2a6ba5a74e057c6adf6bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cfbab860cb43ee349918a3dd81c9a06702094c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("terrysurfers.editor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("terrysurfers.editor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

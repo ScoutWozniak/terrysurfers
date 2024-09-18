@@ -1,5 +1,6 @@
 @using Sandbox;
 @using Sandbox.UI;
+@using System;
 @inherits PanelComponent
 
 <root>
@@ -7,28 +8,53 @@
         <Title>TERRY SURFERS</Title>
         <button onclick=@StartGame class="original-button"><div class="text"><i>play_arrow</i>Start!</div></button>
         <button onclick=@(() => Game.Overlay.ShowSettingsModal()) class="original-button smaller-button"><div class="text">Settings</div></button>
-        <button onclick=@(() => Log.Info("Shop")) class="original-button smaller-button"><div class="text">Shop</div></button>
         <button onclick=@(() => Game.Close()) class="original-button smaller-button"><div class="text">Exit</div></button>
-
-        
+        <shop CurrentCoins =@CurCoins></shop>
     </div>
-    @* <shop></shop> *@
+    
 </root>
 
 @code
 {
 
-	[Property] public PlayerControllerComponent Player { get; set; }
+    [Property] public PlayerControllerComponent Player { get; set; }
 
-	/// <summary>
-	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
-	/// </summary>
-	//protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+    int CurCoins = 0;
 
-	void StartGame()
-	{
+    protected override void OnTreeFirstBuilt()
+    {
+        base.OnTreeFirstBuilt();
+        GetCoins();
+    }
+
+    protected override int BuildHash()
+    {
+        HashCode hashCode = new();
+        hashCode.Add(CurCoins);
+        return hashCode.ToHashCode();
+    }
+
+    protected override void OnUpdate()
+    {
+        base.OnUpdate();
+        if(Input.Pressed("Forward") || Input.Pressed("Jump"))
+        {
+            StartGame();
+        }
+    }
+
+    void StartGame()
+    {
         Scene.Components.Get<GameStateManager>(FindMode.InDescendants).GameState = GameStates.Playing;
-		Player.StartMovement();
-		GameObject.Destroy();
-	}
+        Player.StartMovement();
+        GameObject.Destroy();
+    }
+
+    void GetCoins()
+    {
+        var stats = Sandbox.Services.Stats.GetLocalPlayerStats("katewoz.terrysurfers");
+        stats.Refresh();
+        CurCoins = (int)stats.Get("highscore-coins").Sum;
+        Log.Info(CurCoins);
+    }
 }

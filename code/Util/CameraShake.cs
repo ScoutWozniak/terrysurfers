@@ -42,7 +42,6 @@ public sealed class CameraShake : Component, IGameEventHandler<OnStateChangedEve
 			newOffset.x = intensity * (prevOffset.x + (Time.Delta * (newVals.x - prevOffset.x)));
 			newOffset.y = intensity * (prevOffset.y + (Time.Delta * (newVals.y - prevOffset.y)));
 			newOffset.z = intensity * (prevOffset.z + (Time.Delta * (newVals.z - prevOffset.z)));
-			Log.Info( newOffset );
 			await Task.Frame();
 		}
 		CameraFollow.Offset = Vector3.Zero;

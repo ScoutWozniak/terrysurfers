@@ -8,6 +8,7 @@ StartMenuComponent {
 	border-radius: 20px;
 	gap: 100px 100px;
 	pointer-events: all;
+	font-smooth: never;
 
 	.container {
 		position: absolute;
@@ -65,8 +66,8 @@ StartMenuComponent {
 	}
 
 	.smaller-button {
-		width:50%;
-		height:8%;
+		width: 50%;
+		height: 8%;
 	}
 
 	.original-button:hover {

@@ -1,0 +1,14 @@
+{
+  "Name": "Charli",
+  "CoinsNeeded": 25,
+  "Clothing": [
+    "models/citizen_clothes/gloves/fingerless_gloves/fingerless_gloves.clothing",
+    "models/citizen_clothes/shirt/flannel_shirt/flannel_shirt.clothing",
+    "models/citizen_clothes/shoes/football_shoes/football_shoes.clothing",
+    "models/citizen_clothes/trousers/trackiebottoms/trackie_bottoms_black.clothing",
+    "models/citizen_clothes/skin03.clothing",
+    "models/citizen_clothes/hair/stubble/stubble.clothing"
+  ],
+  "__references": [],
+  "__version": 0
+}

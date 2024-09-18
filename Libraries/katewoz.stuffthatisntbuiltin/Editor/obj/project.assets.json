@@ -106,11 +106,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\games\\s&box\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\Editor\\stuffthatisntbuiltin.editor.csproj",
+      "projectUniqueName": "d:\\Games\\S&BOX\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\Editor\\stuffthatisntbuiltin.editor.csproj",
       "projectName": "stuffthatisntbuiltin.editor",
-      "projectPath": "D:\\games\\s&box\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\Editor\\stuffthatisntbuiltin.editor.csproj",
+      "projectPath": "d:\\Games\\S&BOX\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\Editor\\stuffthatisntbuiltin.editor.csproj",
       "packagesPath": "C:\\Users\\harry\\.nuget\\packages\\",
-      "outputPath": "D:\\games\\s&box\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\Editor\\obj\\",
+      "outputPath": "d:\\Games\\S&BOX\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\Editor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\harry\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

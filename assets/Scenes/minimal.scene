@@ -111,7 +111,6 @@
           "Flags": 0,
           "Name": "Collider",
           "Position": "0,0,0",
-          "Tags": "player",
           "Enabled": true,
           "Components": [
             {
@@ -125,6 +124,12 @@
             {
               "__type": "PlayerTriggerComponent",
               "__guid": "ddfc8929-4c33-4efe-ab8a-7d3c3194fe56",
+              "cc": {
+                "_type": "component",
+                "component_id": "4a55d40e-872a-43b4-b820-2fe059e3b306",
+                "go": "c01750b6-fe22-4617-88c6-6acef4e7e2d2",
+                "component_type": "CharacterController"
+              },
               "DeathTimeScale": [
                 {
                   "y": 1,
@@ -150,6 +155,10 @@
                 "component_id": "5d3dd2c0-2a7b-413d-887c-77f2ae40cdc9",
                 "go": "e6e71521-5b35-473d-8a1a-2be20ca44277",
                 "component_type": "DeathUiComponent"
+              },
+              "Gibs": {
+                "_type": "gameobject",
+                "prefab": "prefabs/playerjibs.prefab"
               },
               "Ragdoll": {
                 "_type": "component",
@@ -372,9 +381,8 @@
         {
           "__guid": "d3decd51-0f3d-4037-ad84-12e3759c16cd",
           "Flags": 0,
-          "Name": "Body",
+          "Name": "PBody",
           "Position": "0,0,0",
-          "Tags": "player",
           "Enabled": true,
           "Components": [
             {
@@ -412,6 +420,7 @@
             {
               "__type": "CitizenCustomisationComponent",
               "__guid": "d54b0644-39ed-4e2b-9a6c-3dec882b1213",
+              "__enabled": false,
               "body": {
                 "_type": "component",
                 "component_id": "28455503-f7a0-45c3-a046-d5a0c4d9ef22",
@@ -1297,13 +1306,13 @@
           "__guid": "e76e7213-3653-4cce-905f-0fa3821afed3",
           "__version": 1,
           "AutoExposureEnabled": true,
-          "ExposureBias": 4.25,
+          "ExposureBias": 2,
           "ExposureCompensation": 0,
           "ExposureMethod": "RGB",
-          "MaximumExposure": 3,
-          "MinimumExposure": 1,
-          "Mode": "HableFilmic",
-          "Rate": 1
+          "MaximumExposure": 1.27,
+          "MinimumExposure": 0.41,
+          "Mode": "ACES",
+          "Rate": 2.95
         },
         {
           "__type": "Sandbox.CubemapFog",
@@ -1321,38 +1330,14 @@
           "__type": "Sandbox.Bloom",
           "__guid": "b743abd6-12be-45c3-a55b-cb0501f3f0d2",
           "BloomColor": {
-            "color": [
-              {
-                "c": "1,1,1,1"
-              },
-              {
-                "t": 1,
-                "c": "1,1,1,1"
-              }
-            ],
+            "color": [],
             "alpha": []
           },
-          "BloomCurve": [
-            {
-              "y": 0.5
-            },
-            {
-              "x": 1,
-              "y": 1
-            }
-          ],
+          "BloomCurve": [],
           "Mode": "Additive",
-          "Strength": 2.79,
-          "Threshold": 0.92,
-          "ThresholdWidth": 0.37
-        },
-        {
-          "__type": "Sandbox.ColorAdjustments",
-          "__guid": "1e0dd9db-d84d-415c-aa43-e71c1ac9aa1c",
-          "Brightness": 1,
-          "Contrast": 1.09,
-          "HueRotate": 0,
-          "Saturation": 1.26
+          "Strength": 1,
+          "Threshold": 0.5,
+          "ThresholdWidth": 0
         },
         {
           "__type": "Sandbox.AmbientOcclusion",
@@ -1369,7 +1354,7 @@
         {
           "__type": "Sandbox.Pixelate",
           "__guid": "fa15f5f2-08c8-4106-8045-3aa58d39cabb",
-          "Scale": 0.01
+          "Scale": 0.05
         },
         {
           "__type": "CameraFollowComponent",
@@ -1757,7 +1742,7 @@
             {
               "__type": "Sandbox.SkyBox2D",
               "__guid": "9543ee6f-7e07-47e1-b51d-b54291af4a72",
-              "SkyMaterial": "materials/skybox/skybox_dark_01.vmat",
+              "SkyMaterial": "materials/skies/sky_day.vmat",
               "Tint": "1,1,1,1"
             },
             {
@@ -1772,7 +1757,7 @@
               "Feathering": 0.02,
               "FrameInterval": 5,
               "MaxDistance": 512,
-              "MultiBounce": false,
+              "MultiBounce": true,
               "Projection": "Sphere",
               "RenderDynamically": true,
               "TintColor": "1,1,1,1",
@@ -1796,9 +1781,9 @@
               "__guid": "7006fb90-bc42-46e8-bf1c-7eaa7d76b429",
               "FogMode": "Enabled",
               "FogStrength": 1,
-              "LightColor": "0.36279,0.35424,0.33579,1",
+              "LightColor": "0.09553,0.12478,0.44651,1",
               "Shadows": true,
-              "SkyColor": "0.19025,0.12017,0.25581,1"
+              "SkyColor": "0.09066,0.06328,0.11628,1"
             }
           ]
         }
@@ -1823,7 +1808,7 @@
               "__type": "Sandbox.SkyBox2D",
               "__guid": "92d9e8af-39e5-449e-81e3-1e1892d8af71",
               "SkyMaterial": "materials/skybox/skybox_sunrise_01.vmat",
-              "Tint": "1,1,1,1"
+              "Tint": "0.2186,0.47907,1,1"
             },
             {
               "__type": "Sandbox.EnvmapProbe",
@@ -1863,7 +1848,7 @@
               "FogStrength": 1,
               "LightColor": "0.87907,1,0.99597,1",
               "Shadows": true,
-              "SkyColor": "0.29757,0.32354,0.6093,1"
+              "SkyColor": "0.4299,0.46539,0.85581,1"
             }
           ]
         }
@@ -1891,8 +1876,9 @@
           "HasDuration": true,
           "Name": "Running Boots",
           "OnCollect": {
-            "__version": 7,
+            "__version": 8,
             "__guid": "6561fac0-96e5-4ee6-9272-8bdae66aa016",
+            "__changeId": 0,
             "UserData": {
               "Title": "On Collect",
               "ReferencedComponentTypes": []
@@ -1974,8 +1960,9 @@
           "HasDuration": true,
           "Name": "JumpBoots",
           "OnCollect": {
-            "__version": 7,
+            "__version": 8,
             "__guid": "29aa90d5-736d-421c-9bc2-84978683e4bd",
+            "__changeId": 0,
             "UserData": {
               "Title": "On Collect",
               "ReferencedComponentTypes": []
@@ -2045,7 +2032,7 @@
         {
           "__type": "ScoreComp",
           "__guid": "ee12b129-faeb-40b6-b26e-19b8f3c2be18",
-          "MaxSpeedDistance": 10000,
+          "MaxSpeedDistance": 100,
           "SpeedDistScale": {
             "rangey": "1,2",
             "frames": [
@@ -2075,8 +2062,8 @@
       "__guid": "c9ba692f-78ee-463f-b0c3-2c10699a2076",
       "Flags": 0,
       "Name": "InitialCamPos",
-      "Position": "-384.3491,-32.21611,86.41759",
-      "Rotation": "-0.04745842,0.1017644,0.1287644,0.9852982",
+      "Position": "-412,0,120",
+      "Rotation": "0,0.1305262,0,0.9914449",
       "Enabled": true,
       "Children": [
         {

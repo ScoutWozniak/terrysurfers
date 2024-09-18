@@ -1,0 +1,12 @@
+{
+  "Name": "Sir Hawk",
+  "CoinsNeeded": 100,
+  "Clothing": [
+    "models/citizen_clothes/hat/bucket_helmet/models/bucket_helmet.clothing",
+    "models/citizen_clothes/trousers/legarmour/leg_armour.clothing",
+    "models/citizen_clothes/vest/chest_armour/chest_armour.clothing",
+    "models/citizen_clothes/full_outfit/medieval_armour/medieval_armour.clothing"
+  ],
+  "__references": [],
+  "__version": 0
+}

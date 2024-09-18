@@ -1,0 +1,501 @@
+{
+  "RootObject": {
+    "__guid": "e01b0b34-f5fc-4ce3-98b1-b259bd14d2f7",
+    "Flags": 0,
+    "Name": "playerjibs",
+    "Tags": "player",
+    "Enabled": true,
+    "Children": [
+      {
+        "__guid": "41661c1b-1abd-46ff-9948-0e9f677cbe5e",
+        "Flags": 0,
+        "Name": "head_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "f02dc40d-00d9-49cf-ac82-a12c380689b7",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/head_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "310a48f3-da77-465c-9c92-443e1c85ddb0",
+        "Flags": 0,
+        "Name": "intestine_gib",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "4e624712-58f6-43b0-a698-65bdf008aa06",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/intestine_gib.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d81dcca9-d697-4739-b408-f1bc2eedfa7c",
+        "Flags": 0,
+        "Name": "left_arm_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "1853be1b-7058-4938-a887-5adb21bff6db",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/left_arm_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "328e822f-8404-4fc1-a8aa-267195723ff9",
+        "Flags": 0,
+        "Name": "left_foot_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "9a0a02f6-9d35-4d27-99c6-5df9c9bbade9",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/left_foot_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "bdeb8ad1-c86b-486d-992b-d9635a8df4e0",
+        "Flags": 0,
+        "Name": "left_leg_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ed25b251-0d55-4e04-a49e-8f669f26098a",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/left_leg_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "6bd3eea7-bba8-4cfb-8c4c-b8542f92cead",
+        "Flags": 0,
+        "Name": "left_hand_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "9af2e299-46fc-4ce8-b753-bf2d2bdcc70e",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/left_hand_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c0bfa94c-9f2d-4cd8-8563-1bc37faa1ae0",
+        "Flags": 0,
+        "Name": "organ_02_gib",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "cccd5f79-3bf2-4748-b6e8-a33da8c20de4",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/organ_02_gib.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d5f00b37-a381-462f-ab63-0b51b8c08eb7",
+        "Flags": 0,
+        "Name": "pelvis_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "bc890d16-4d3a-4826-a325-70fcd5793199",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/pelvis_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "1dfc69bb-a29d-4be1-9fb3-e18b9bdb3694",
+        "Flags": 0,
+        "Name": "right_hand_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "0340ff5c-ea2a-469c-aaa5-f5858a6c51ac",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/right_hand_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "6b77dc51-0a57-4e09-96db-f6bb242600c8",
+        "Flags": 0,
+        "Name": "right_foot_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "e05d58ce-e2d3-41d0-aebe-4980273c7460",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/right_foot_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "d1f30e1c-5af4-451f-a150-e95b486b6182",
+        "Flags": 0,
+        "Name": "right_arm_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "678eb18e-2cdf-4f02-a1bd-a16e5e4fb83d",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/right_arm_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "33d61cef-db7b-45e1-9775-3cf087aa244b",
+        "Flags": 0,
+        "Name": "right_leg_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "c22736ec-2adc-448f-8099-db0adc6894a1",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/right_leg_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c9e3465a-1f73-4e8a-b47f-139bfe79cbfd",
+        "Flags": 0,
+        "Name": "ribs_gib",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "bd9a2465-8456-4027-9eb1-2c0070fb9a03",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/ribs_gib.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "c81e76c7-17fb-490a-b2c0-be4b006e127e",
+        "Flags": 0,
+        "Name": "torso_gib_cap",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Prop",
+            "__guid": "ef55b96a-0b5d-42e5-b363-8197c3850922",
+            "BodyGroups": 18446744073709551615,
+            "Health": 0,
+            "IsStatic": false,
+            "Model": "models/citizen_gibs/models/torso_gib_cap.vmdl",
+            "StartAsleep": false,
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "1185df53-c406-40c1-a7a1-ac294d7d6315",
+        "Flags": 0,
+        "Name": "Spray",
+        "Position": "-11.38803,-0.00000943952,42.50074",
+        "Rotation": "0,-0.7933533,0,0.6087615",
+        "Tags": "particles",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ParticleEffect",
+            "__guid": "147677c6-28d1-4c62-be2c-bfd758d136a8",
+            "__version": 1,
+            "Alpha": {
+              "Type": "Curve",
+              "CurveA": [
+                {
+                  "y": 1
+                },
+                {
+                  "x": 0.48029557,
+                  "y": 1,
+                  "in": 1.5365853,
+                  "out": -1.5365853
+                },
+                {
+                  "x": 1,
+                  "in": 1.312303,
+                  "out": -1.312303
+                }
+              ],
+              "Constants": "1,0,0,0"
+            },
+            "ApplyAlpha": true,
+            "ApplyColor": true,
+            "ApplyRotation": false,
+            "ApplyShape": true,
+            "Bounce": {
+              "Constants": "1,0,0,0"
+            },
+            "Brightness": {
+              "Constants": "1,0,0,0"
+            },
+            "Bumpiness": {},
+            "Collision": true,
+            "CollisionIgnore": "player",
+            "CollisionRadius": 1,
+            "Damping": {},
+            "DieOnCollisionChance": {},
+            "Force": true,
+            "ForceDirection": "0,0,-200",
+            "ForceScale": {
+              "Constants": "1,0,0,0"
+            },
+            "Friction": {
+              "Constants": "1,0,0,0"
+            },
+            "Gradient": {
+              "Type": "Range",
+              "Evaluation": "Particle",
+              "GradientA": {
+                "color": [
+                  {
+                    "t": 0.5,
+                    "c": "1,1,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "GradientB": {
+                "color": [
+                  {
+                    "t": 0.5,
+                    "c": "1,1,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "ConstantA": "0.53488,0.03483,0.03483,1",
+              "ConstantB": "0.18605,0,0,1"
+            },
+            "Lifetime": {
+              "Type": "Range",
+              "Evaluation": "Particle",
+              "Constants": "1,2,0,0"
+            },
+            "MaxParticles": 100,
+            "OnParticleCreated": null,
+            "OrbitalForce": {},
+            "OrbitalPull": {},
+            "PerParticleTimeScale": {
+              "Constants": "1,0.4,0,0"
+            },
+            "Pitch": {},
+            "PreWarm": 0,
+            "PushStrength": {},
+            "Roll": {
+              "Type": "Range",
+              "Evaluation": "Particle",
+              "Constants": "0,360,0,0"
+            },
+            "Scale": {
+              "Type": "Curve",
+              "CurveA": {
+                "rangey": "0,8",
+                "frames": [
+                  {
+                    "in": -9.333329,
+                    "out": 9.333329
+                  },
+                  {
+                    "x": 0.03325123,
+                    "y": 1,
+                    "in": -0.056075174,
+                    "out": 0.056075174
+                  },
+                  {
+                    "x": 1,
+                    "in": 2.9152544,
+                    "out": -2.9152544
+                  }
+                ]
+              },
+              "Constants": "1,0,0,0"
+            },
+            "SequenceId": {},
+            "SequenceSpeed": {
+              "Constants": "1,0,0,0"
+            },
+            "SequenceTime": {
+              "Constants": "1,0,0,0"
+            },
+            "SheetSequence": false,
+            "Space": "World",
+            "StartDelay": {},
+            "StartVelocity": {
+              "Type": "Range",
+              "Evaluation": "Particle",
+              "Constants": "100,200,0,0"
+            },
+            "Stretch": {},
+            "TimeScale": 1,
+            "Tint": "1,1,1,1",
+            "Yaw": {}
+          },
+          {
+            "__type": "Sandbox.ParticleSpriteRenderer",
+            "__guid": "8f865939-3664-4750-a090-d8f014fbf391",
+            "Additive": false,
+            "Alignment": "LookAtCamera",
+            "BlurAmount": 0.19,
+            "BlurOpacity": 0.91,
+            "BlurSpacing": 0.78,
+            "DepthFeather": 0,
+            "FaceVelocity": false,
+            "FogStrength": 1,
+            "LeadingTrail": true,
+            "Lighting": false,
+            "MotionBlur": false,
+            "Opaque": false,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RotationOffset": 0,
+            "Scale": 1,
+            "Shadows": true,
+            "SortMode": "Unsorted",
+            "Texture": "materials/particles/shapes/splotch1.vtex"
+          },
+          {
+            "__type": "Sandbox.ParticleConeEmitter",
+            "__guid": "398d1f1c-c8ca-42c7-b367-0a062d1c0290",
+            "Burst": 0,
+            "ConeAngle": 31.4,
+            "ConeFar": 50,
+            "ConeNear": 1,
+            "Delay": 0,
+            "DestroyOnEnd": false,
+            "Duration": 1,
+            "InVolume": true,
+            "Loop": false,
+            "OnEdge": false,
+            "Rate": 500,
+            "RateOverDistance": 0
+          },
+          {
+            "__type": "Sandbox.ParticleTrailRenderer",
+            "__guid": "c16714a9-b826-460a-9f08-09efccaf0f40",
+            "BlendMode": "Multiply",
+            "CastShadows": true,
+            "Color": {
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,0.2,0.2,1"
+                }
+              ],
+              "alpha": []
+            },
+            "LifeTime": 2,
+            "MaxPoints": 16,
+            "Opaque": true,
+            "PointDistance": 8,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "ScaleFromParticle": true,
+            "Texturing": {
+              "WorldSpace": true,
+              "UnitsPerTexture": 10,
+              "Scale": 1
+            },
+            "TintFromParticle": true,
+            "Width": [
+              {
+                "y": 1
+              },
+              {
+                "x": 1
+              }
+            ],
+            "Wireframe": false
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

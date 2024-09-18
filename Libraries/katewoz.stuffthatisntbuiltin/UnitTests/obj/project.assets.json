@@ -1112,11 +1112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\games\\s&box\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\UnitTests\\stuffthatisntbuiltin.unittest.csproj",
+      "projectUniqueName": "d:\\Games\\S&BOX\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\UnitTests\\stuffthatisntbuiltin.unittest.csproj",
       "projectName": "stuffthatisntbuiltin.unittest",
-      "projectPath": "D:\\games\\s&box\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\UnitTests\\stuffthatisntbuiltin.unittest.csproj",
+      "projectPath": "d:\\Games\\S&BOX\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\UnitTests\\stuffthatisntbuiltin.unittest.csproj",
       "packagesPath": "C:\\Users\\harry\\.nuget\\packages\\",
-      "outputPath": "D:\\games\\s&box\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\UnitTests\\obj\\",
+      "outputPath": "d:\\Games\\S&BOX\\terrysurfers\\Libraries\\katewoz.stuffthatisntbuiltin\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\harry\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

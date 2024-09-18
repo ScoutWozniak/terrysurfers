@@ -3,7 +3,15 @@
 @attribute [StyleSheet]
 
 <root>
-    <div class="storeEntries">
-        <StoreEntry></StoreEntry>
-    </div>
+    @if(LoadedOutfit != null) {
+        <button onclick=@(() => ChangeOutfit(-1))> &#8592; </button>
+        <button onclick=@(() => ChangeOutfit(1))> &#8594; </button>
+        <p>@(LoadedOutfit.Name)</p>
+        @if (LoadedOutfit.CoinsNeeded <= CurrentCoins)
+        {
+            <button onclick=@(() => EquipClothing())>Equip</button>
+        } else {
+            <p>$ @(LoadedOutfit.CoinsNeeded)</p>
+        }
+    }
 </root>

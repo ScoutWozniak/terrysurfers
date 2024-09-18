@@ -1,0 +1,12 @@
+{
+  "Name": "Veronica",
+  "CoinsNeeded": 150,
+  "Clothing": [
+    "models/citizen_clothes/dress/posh_dress/models/posh_dress.clothing",
+    "models/citizen_clothes/hair/hair_longcurly/hair_longcurly_brown.clothing",
+    "models/citizen_clothes/shoes/slippers/slippers.clothing",
+    "models/citizen_clothes/skin02.clothing"
+  ],
+  "__references": [],
+  "__version": 0
+}

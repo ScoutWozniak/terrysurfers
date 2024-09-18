@@ -1,7 +1,8 @@
 using Sandbox;
+using Sandbox.Events;
 using System;
 
-public sealed class Powerup : Component, Component.ITriggerListener
+public sealed class Powerup : Component, Component.ITriggerListener, IGameEventHandler<OnStateChangedEvent>
 {
 	[Property] Action OnCollect { get; set; }
 
@@ -37,6 +38,7 @@ public sealed class Powerup : Component, Component.ITriggerListener
 	{
 		if (other.Tags.Has("player"))
 		{
+			Log.Info( "TESTING" );
 			OnCollect?.Invoke();
 			foreach ( var listener in Components.GetAll<IPowerupListener>() )
 			{
@@ -52,5 +54,17 @@ public sealed class Powerup : Component, Component.ITriggerListener
 	public float GetProgress()
 	{
 		return ((UntilExpired.Passed - Duration)  / Duration) * -1;
+	}
+
+	public void OnGameEvent( OnStateChangedEvent eventArgs )
+	{
+		if ( eventArgs.toState == GameStates.GameOver )
+		{
+			IsActive = false;
+			foreach ( var listener in Components.GetAll<IPowerupListener>() )
+			{
+				listener.RemoveEffects();
+			}
+		}
 	}
 }

@@ -132,7 +132,7 @@ public sealed class PlayerControllerComponent : Component, IGameEventHandler<OnS
 	async Task Duck()
 	{
 		Rolling = true;
-		if (RollGroundTime < 1)
+		if (RollGroundTime < 0.1f)
 			MoveStyle = CitizenAnimationHelper.SpecialMoveStyle.Roll;
 		else
 			MoveStyle = CitizenAnimationHelper.SpecialMoveStyle.Slide;
