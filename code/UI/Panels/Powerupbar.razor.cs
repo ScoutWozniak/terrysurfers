@@ -10,7 +10,8 @@ public partial class Powerupbar : Panel
 	public override void Tick()
 	{
 		base.Tick();
-		Progress = TrackingPowerup.GetProgress();
+		if (TrackingPowerup != null)
+			Progress = TrackingPowerup.GetProgress();
 	}
 
 	protected override int BuildHash()

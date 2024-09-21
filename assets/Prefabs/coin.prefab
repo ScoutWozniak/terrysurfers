@@ -48,9 +48,10 @@
     ],
     "__variables": []
   },
-  "ShowInMenu": false,
-  "MenuPath": null,
+  "ShowInMenu": true,
+  "MenuPath": "Powerups/Coin",
   "MenuIcon": null,
+  "DontBreakAsTemplate": true,
   "ResourceVersion": 1,
   "__references": [],
   "__version": 1

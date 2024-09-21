@@ -1,0 +1,102 @@
+{
+  "RootObject": {
+    "__guid": "adb02765-7413-4fcd-9113-1a6c1469d92f",
+    "Flags": 0,
+    "Name": "jumpboots",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.SphereCollider",
+        "__guid": "6201119d-dda4-4c8e-9863-08ab3d8771ba",
+        "Center": "0,0,0",
+        "IsTrigger": true,
+        "Radius": 49.199993,
+        "Static": false
+      },
+      {
+        "__type": "Powerup",
+        "__guid": "96304fa0-6d0a-44ca-98d6-bfb0b5119049",
+        "Collider": {
+          "_type": "component",
+          "component_id": "6201119d-dda4-4c8e-9863-08ab3d8771ba",
+          "go": "adb02765-7413-4fcd-9113-1a6c1469d92f",
+          "component_type": "SphereCollider"
+        },
+        "Duration": 4,
+        "HasDuration": true,
+        "Model": {
+          "_type": "gameobject",
+          "go": "4ad25433-f434-44cc-9f44-1f8b4ad68bb1"
+        },
+        "Name": "JumpBoots",
+        "OnCollect": {
+          "__version": 8,
+          "__guid": "29aa90d5-736d-421c-9bc2-84978683e4bd",
+          "__changeId": 0,
+          "UserData": {
+            "Title": "On Collect",
+            "ReferencedComponentTypes": []
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input"
+            }
+          ],
+          "Links": []
+        }
+      },
+      {
+        "__type": "JumpBoots",
+        "__guid": "c120e4f3-6101-4d15-b41a-4422b422020a",
+        "JumpIncrease": 0.5
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "4ad25433-f434-44cc-9f44-1f8b4ad68bb1",
+        "Flags": 0,
+        "Name": "Model",
+        "Position": "0,0,-8.483612",
+        "Scale": "2.428846,2.428846,2.428846",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "1dd622ee-6351-4b53-8c19-d895298308db",
+            "BodyGroups": 18446744073709551615,
+            "CreateBoneObjects": false,
+            "Model": "models/citizen_clothes/shoes/boxing_boots/models/boxing_boots_blue.vmdl",
+            "Morphs": {},
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.HighlightOutline",
+            "__guid": "4f316eeb-eb51-4f4a-a54c-b9720ae001ef",
+            "Color": "1,0.83333,0,1",
+            "InsideColor": "0,0,0,0",
+            "InsideObscuredColor": "0,0,0,0",
+            "ObscuredColor": "0,0,0,0.4",
+            "Width": 0.5
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

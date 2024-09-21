@@ -46,8 +46,9 @@
     "__variables": []
   },
   "ShowInMenu": false,
-  "MenuPath": null,
+  "MenuPath": "Obstacles/BoxRamp",
   "MenuIcon": null,
+  "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
   "__references": [],
   "__version": 1

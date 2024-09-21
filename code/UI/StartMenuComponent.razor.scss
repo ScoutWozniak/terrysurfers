@@ -9,6 +9,10 @@ StartMenuComponent {
 	gap: 100px 100px;
 	pointer-events: all;
 	font-smooth: never;
+	color: white;
+	font-weight: bold;
+	font-size: 56px;
+	font-family: 'Pixel Operator';
 
 	.container {
 		position: absolute;
@@ -39,6 +43,7 @@ StartMenuComponent {
 		border-radius: 15px;
 		transform: rotate(0) scale(1);
 		transition: 0.3s;
+
 
 		.text {
 			font-size: 50px;

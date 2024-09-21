@@ -7,7 +7,7 @@ using System.Linq;
 public partial class Shop : Panel
 {
 	Outfit LoadedOutfit { get; set; }
-	int Index = 1;
+	int Index = 0;
 
 	public int CurrentCoins { get; set; }
 
@@ -40,7 +40,6 @@ public partial class Shop : Panel
 		HashCode a = new();
 		a.Add( LoadedOutfit );
 		a.Add( CurrentCoins );
-		Log.Info( CurrentCoins );
 		return a.ToHashCode();
 	}
 

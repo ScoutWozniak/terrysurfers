@@ -485,6 +485,15 @@
             "Shadows": false
           }
         ]
+      },
+      {
+        "__guid": "dd37a925-e78f-4c68-94d3-364cc8b82cd6",
+        "Flags": 0,
+        "Name": "PowerupSpawner",
+        "Position": "1148,4,58.14648",
+        "Enabled": true,
+        "__Prefab": "prefabs/powerups/spawner.prefab",
+        "__PrefabVariables": {}
       }
     ],
     "__variables": []

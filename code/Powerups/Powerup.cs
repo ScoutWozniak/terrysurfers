@@ -15,6 +15,10 @@ public sealed class Powerup : Component, Component.ITriggerListener, IGameEventH
 
 	private bool IsActive { get; set; }
 
+	[Property] GameObject Model { get; set; }
+
+	[Property] SphereCollider Collider { get; set; }
+
 	protected override void OnFixedUpdate()
 	{
 		base.OnFixedUpdate();
@@ -24,11 +28,7 @@ public sealed class Powerup : Component, Component.ITriggerListener, IGameEventH
 		{
 			if ( UntilExpired <= 0 )
 			{
-				IsActive = false;
-				foreach ( var listener in Components.GetAll<IPowerupListener>() )
-				{
-					listener.RemoveEffects();
-				}
+				RemoveEffects();
 			}
 		}
 	}
@@ -38,16 +38,7 @@ public sealed class Powerup : Component, Component.ITriggerListener, IGameEventH
 	{
 		if (other.Tags.Has("player"))
 		{
-			Log.Info( "TESTING" );
-			OnCollect?.Invoke();
-			foreach ( var listener in Components.GetAll<IPowerupListener>() )
-			{
-				listener.OnPowerupCollected( this );
-			}
-			
-			IsActive = true;
-
-			UntilExpired = Duration;
+			Collect();
 		}
 	}
 
@@ -60,11 +51,35 @@ public sealed class Powerup : Component, Component.ITriggerListener, IGameEventH
 	{
 		if ( eventArgs.toState == GameStates.GameOver )
 		{
-			IsActive = false;
-			foreach ( var listener in Components.GetAll<IPowerupListener>() )
-			{
-				listener.RemoveEffects();
-			}
+			RemoveEffects();
 		}
+	}
+
+	void Collect()
+	{
+		Log.Info( $"Power up {GameObject.Name} activated" );
+		OnCollect?.Invoke();
+		foreach ( var listener in Components.GetAll<IPowerupListener>() )
+		{
+			listener.OnPowerupCollected( this );
+		}
+
+		IsActive = true;
+		UntilExpired = Duration;
+
+		GameObject.SetParent( Scene.Root );
+
+		Model.Enabled = false;
+		Collider.Enabled = false;
+	}
+
+	void RemoveEffects()
+	{
+		IsActive = false;
+		foreach ( var listener in Components.GetAll<IPowerupListener>() )
+		{
+			listener.RemoveEffects();
+		}
+		GameObject.Destroy();
 	}
 }

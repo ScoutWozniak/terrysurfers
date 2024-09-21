@@ -1,0 +1,32 @@
+{
+  "RootObject": {
+    "__guid": "b787e796-f96f-4cd9-b178-cfd133a8dcaf",
+    "Flags": 0,
+    "Name": "PowerupSpawner",
+    "Position": "688,0,72",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "PowerupSpawner",
+        "__guid": "71246606-3412-4bc0-add0-bd689c3210ab",
+        "Powerups": [
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/powerups/speedboots.prefab"
+          },
+          {
+            "_type": "gameobject",
+            "prefab": "prefabs/powerups/jumpboots.prefab"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": true,
+  "MenuPath": "Powerups/Spawner",
+  "MenuIcon": "",
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

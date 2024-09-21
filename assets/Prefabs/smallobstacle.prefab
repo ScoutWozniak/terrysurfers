@@ -44,9 +44,10 @@
     ],
     "__variables": []
   },
-  "ShowInMenu": false,
-  "MenuPath": null,
+  "ShowInMenu": true,
+  "MenuPath": "Obstacles/SmallBarrier",
   "MenuIcon": null,
+  "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
   "__references": [],
   "__version": 1

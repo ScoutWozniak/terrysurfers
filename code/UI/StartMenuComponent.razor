@@ -9,6 +9,7 @@
         <button onclick=@StartGame class="original-button"><div class="text"><i>play_arrow</i>Start!</div></button>
         <button onclick=@(() => Game.Overlay.ShowSettingsModal()) class="original-button smaller-button"><div class="text">Settings</div></button>
         <button onclick=@(() => Game.Close()) class="original-button smaller-button"><div class="text">Exit</div></button>
+        <p>Coins: $@CurCoins</p>
         <shop CurrentCoins =@CurCoins></shop>
     </div>
     
